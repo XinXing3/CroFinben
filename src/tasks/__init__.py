@@ -4,33 +4,33 @@ from typing import List, Union
 import json
 import lm_eval.base
 
-from . import flare
+from . import SeaF
 # Clear GPU memory
 import torch
 torch.cuda.empty_cache()
 TASK_REGISTRY = {
-    "flare_thEx": flare.ThExTask,
-    "flare_idfinsent": flare.IDfinsent,
-    "flare_IdFinReviewsSent": flare.IDFinReviewsSent,
-    "flare_CCFraud": flare.CCFraudTask,
-    "flare_craccf": flare.craccfTask,
-    "flare_fbp": flare.FpbTask,
-    "flare_Australian": flare.AustralianTask,
-    "flare_sm_cikmID": flare.StockMovementCIKMID,
-    "flare_vi_bigdata": flare.StockMovementBigDataVI,
-    "flare_sm_aclPH": flare.StockMovementACLPH,
-    "flare_sm_aclMY": flare.StockMovementACLMY,
-    "flare_stockATh": flare.StockMovementStockA,
-    "flare_fiqasa": flare.FIQASA,
-    "flare_cra_lendingclub": flare.lendingclub,
-    "flare_IDFinURLSum": flare.IDFinURLSumTask,
-    "flare_VieRen": flare.VieComputerPartTask,
-    "flare_MayRen": flare.MayComputerPartTask,
-    "flare_ThaRen": flare.THComputerPartTask,
-    "flare_IndRen": flare.IndComputerPartTask,
-    "flare_FilRen": flare.FilComputerPartTask,
+    "SeaF_thEx": SeaF.ThExTask,
+    "SeaF_idfinsent": SeaF.IDfinsent,
+    "SeaF_IdFinReviewsSent": SeaF.IDFinReviewsSent,
+    "SeaF_CCFraud": SeaF.CCFraudTask,
+    "SeaF_craccf": SeaF.craccfTask,
+    "SeaF_fbp": SeaF.FpbTask,
+    "SeaF_Australian": SeaF.AustralianTask,
+    "SeaF_sm_cikmID": SeaF.StockMovementCIKMID,
+    "SeaF_vi_bigdata": SeaF.StockMovementBigDataVI,
+    "SeaF_sm_aclPH": SeaF.StockMovementACLPH,
+    "SeaF_sm_aclMY": SeaF.StockMovementACLMY,
+    "SeaF_stockATh": SeaF.StockMovementStockA,
+    "SeaF_fiqasa": SeaF.FIQASA,
+    "SeaF_cra_lendingclub": SeaF.lendingclub,
+    "SeaF_IDFinURLSum": SeaF.IDFinURLSumTask,
+    "SeaF_VieRen": SeaF.VieComputerPartTask,
+    "SeaF_MayRen": SeaF.MayComputerPartTask,
+    "SeaF_ThaRen": SeaF.THComputerPartTask,
+    "SeaF_IndRen": SeaF.IndComputerPartTask,
+    "SeaF_FilRen": SeaF.FilComputerPartTask,
 
-    **flare.SM_TASKS,
+    **SeaF.SM_TASKS,
 }
 
 
