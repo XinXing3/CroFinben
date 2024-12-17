@@ -6,6 +6,7 @@
 </div>
 
 <!-- 作者部分 -->
+<h1 style="float:left">"Main Contributors"</h1>
 <div align="center" style="margin-top: 40px;">
     <div style="font-size: 18px; margin-bottom: 10px;">
         <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Gang Hu</a>
