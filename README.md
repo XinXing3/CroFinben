@@ -158,10 +158,10 @@ In this section, we provide a detailed performance analysis of FinMA compared to
 
 | Task | Language | Dataset         | Task                     | Test | Evaluation          | License      | Paper      |
 |------|----------|-----------------|--------------------------|------|---------------------|--------------|------------|
-| KU   | Tha      | ThaEx           | financial exam           | 631  | Accuracy, Macro F1  | Apache-2.0   | |
-|      | Ind      | IndFinComment   | rating prediction        | 1,999| Accuracy, Macro F1  | CC BY-NC 4.0 |   |
-|      | Ind      | IndFinURL       | url summarization        | 2,834| ROUGE, BERTScore    | Public       |  |
-| IT   | Ind      | IndFinSent      | sentiment analysis       | 2,000| F1, Accuracy        | Apache-2.0   |  |
+| KU   | Tha      | ThaEx           | financial exam           | 631  | Accuracy, Macro F1  | Apache-2.0   |[[3]](#3)  |
+|      | Ind      | IndFinComment   | rating prediction        | 1,999| Accuracy, Macro F1  | CC BY-NC 4.0 | [[4]](#4)  |
+|      | Ind      | IndFinURL       | url summarization        | 2,834| ROUGE, BERTScore    | Public       | [[5]](#5)  |
+| IT   | Ind      | IndFinSent      | sentiment analysis       | 2,000| F1, Accuracy        | Apache-2.0   | [[6]](#6)  |
 |      | Fil      | FilFiQASA       | sentiment analysis       | 233  | F1, Accuracy        | MIT License  | [[2]](#2)  |
 |      | May      | MayFPB          | sentiment analysis       | 970  | F1, Accuracy        | MIT License  | [[1]](#1)  |
 | CR   | Ind      | IndCCFraud      | fraud detection          | 2,098| F1, MCC             | Public       |[[22]](#26to32)  |
@@ -191,13 +191,17 @@ In this section, we provide a detailed performance analysis of FinMA compared to
 
 <span id="2">2.</span> Macedo Maia, Siegfried Handschuh, André Freitas, Brian Davis, Ross McDermott, Manel Zarrouk, and Alexandra Balahur. 2018. Www’18 open challenge: financial opinion mining and question answering. In Companion proceedings of the the web conference 2018. 1941–1942.
 
-<span id="3">3.</span> Keith Cortis, André Freitas, Tobias Daudert, Manuela Huerlimann, Manel Zarrouk, Siegfried Handschuh, and Brian Davis. 2017. [SemEval-2017 Task 5: Fine-Grained Sentiment Analysis on Financial Microblogs and News](https://aclanthology.org/S17-2089). In *Proceedings of the 11th International Workshop on Semantic Evaluation (SemEval-2017)*, pages 519–535, Vancouver, Canada. Association for Computational Linguistics.
+<span id="3">3.</span> S. E. of Thailand, “General investment advisor course,” https:522
+//www.set.or.th, accessed on November 7, 2024
 
-<span id="4">4.</span> Agam Shah, Suvan Paturi, and Sudheer Chava. 2023. [Trillion Dollar Words: A New Financial Dataset, Task & Market Analysis](https://aclanthology.org/2023.acl-long.368). In *Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)*, pages 6664–6679, Toronto, Canada. Association for Computational Linguistics.
+<span id="4">4.</span> G. Ahmadijaya, “Livin’ by mandiri app reviews,” https://www.528
+kaggle.com/datasets/itanium/livin-by-mandiri-app-reviews,529
+2023, accessed on Oct. 22, 2023
 
-<span id="5">5.</span> Ankur Sinha and Tanmay Khandait. 2021. Impact of news on the commodity market: Dataset and results. In Advances in Information and Communication: Proceedings of the 2021 Future of Information and Communication Conference (FICC), Volume 2. Springer, 589–601.
+<span id="5">5.</span> [Ankur Sinha and Tanmay Khandait. 2021. Impact of news on the commodity market: Dataset and results. In Advances in Information and Communication: Proceedings of the 2021 Future of Information and Communication Conference (FICC), Volume 2. Springer, 589–601](https://raw.githubusercontent.com/ibamibrahim/
+dataset-judul-berita-indonesia/master/detik_news_title.csv).
 
-<span id="6">6.</span> Chen C C, Lin C Y, Chiu C J, et al. [Overview of the NTCIR-17 FinArg-1 Task: Fine-grained argument understanding in financial analysis](https://research.nii.ac.jp/ntcir/workshop/OnlineProceedings17/pdf/ntcir/01-NTCIR17-OV-FINARG-ChenC.pdf)[C]//Proceedings of the 17th NTCIR Conference on Evaluation of Information Access Technologies, Tokyo, Japan. 2023.
+<span id="6">6.</span> N. P. I. Maharani, A. Purwarianti et al., “Domain-specific language model post-training for indonesian financial nlp,” in 2023 International Conference on Electrical Engineering and Informatics (ICEEI). IEEE, 2023, pp. 1–6.
 
 <span id="7">7.</span> Rasmus Jørgensen, Oliver Brandt, Mareike Hartmann, Xiang Dai, Christian Igel, and Desmond Elliott. 2023. [MultiFin: A Dataset for Multilingual Financial NLP](https://aclanthology.org/2023.findings-eacl.66). In *Findings of the Association for Computational Linguistics: EACL 2023*, pages 894–909, Dubrovnik, Croatia. Association for Computational Linguistics.
 
