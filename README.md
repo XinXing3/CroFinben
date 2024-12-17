@@ -9,7 +9,7 @@
 <!-- 作者部分 -->
 
    
-<h1 style="float:left">Main Contributors</h1>
+<h1 align="left">Main Contributors</h1>
 <div align="left" style="margin-top: 40px;">
  
     <div style="font-size: 18px; margin-bottom: 20px;">
