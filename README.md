@@ -157,29 +157,29 @@ In this section, we provide a detailed performance analysis of FinMA compared to
 
 
 
+| Task | Language | Dataset         | Task                     | Test | Evaluation          | License      |
+|------|----------|-----------------|--------------------------|------|---------------------|--------------|
+| KU   | Tha      | ThaEx           | financial exam           | 631  | Accuracy, Macro F1  | Apache-2.0   |
+|      | Ind      | IndFinComment   | rating prediction        | 1,999| Accuracy, Macro F1  | CC BY-NC 4.0 |
+|      | Ind      | IndFinURL       | url summarization        | 2,834| ROUGE, BERTScore    | Public       |
+| IT   | Ind      | IndFinSent      | sentiment analysis       | 2,000| F1, Accuracy        | Apache-2.0   |
+|      | Fil      | FilFiQASA       | sentiment analysis       | 233  | F1, Accuracy        | MIT License  |
+|      | May      | MayFPB          | sentiment analysis       | 970  | F1, Accuracy        | MIT License  |
+| CR   | Ind      | IndCCFraud      | fraud detection          | 2,098| F1, MCC             | Public       |
+|      | Vie      | VieCraccf       | fraud detection          | 2,279| F1, MCC             | (DbCL) v1.0  |
+|      | Fil      | FilLendingClub  | credit scoring           | 2,691| F1, MCC             | CC0 1.0      |
+|      | May      | MayAustralian   | credit scoring           | 133  | F1, MCC             | CC BY 4.0    |
+| FD   | Ind      | IndCikm         | stock movement prediction| 1,139| F1, Accuracy        | Public       |
+|      | Vie      | VieBigdata      | stock movement prediction| 1,139| F1, Accuracy        | Public       |
+|      | Fil      | FilACL18        | stock movement prediction| 1,139| F1, Accuracy        | MIT License  |
+|      | May      | MayACL18        | stock movement prediction| 1,139| F1, Accuracy        | MIT License  |
+|      | Tha      | ThaStockA       | stock movement prediction| 1,139| F1, Accuracy        | Public       |
+| NR   | Tha      | ThaRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       |
+|      | Ind      | IndRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       |
+|      | May      | MayRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       |
+|      | Fil      | FilRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       |
+|      | Vie      | VieRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       |
 
-Task	Language	Dataset	Task	Test	Evaluation	License
-KU	Tha	ThaEx	financial exam	631	Accuracy, Macro F1	Apache-2.0
-	Ind	IndFinComment	rating prediction	1,999	Accuracy, Macro F1	CC BY-NC 4.0
-	Ind	IndFinURL	url summarization 	2,834	ROUGE, BERTScore	Public
-IT	Ind	IndFinSent	sentiment analysis	2,000	F1, Accuracy	Apache-2.0
-	Fil	FilFiQASA	sentiment analysis	233	F1, Accuracy	MIT License
-	May	MayFPB	sentiment analysis	970	F1, Accuracy	MIT License
-CR	Ind	IndCCFraud	fraud detection	2,098	F1, MCC	Public
-	Vie	VieCraccf	fraud detection	2,279	F1, MCC	(DbCL) v1.0
-	Fil	FilLendingClub	credit scoring	2,691	F1, MCC	CC0 1.0
-	May	MayAustralian	credit scoring	133	F1, MCC	CC BY 4.0
-FD	Ind	IndCikm	stock movement prediction	1,139	F1, Accuracy	Public
-	Vie	VieBigdata	stock movement prediction	1,139	F1, Accuracy	Public
-	Fil	FilACL18	stock movement prediction	1,139	F1, Accuracy	MIT License
-	May	MayACL18	stock movement prediction	1,139	F1, Accuracy	MIT License
-	Tha	ThaStockA	stock movement prediction	1,139	F1, Accuracy	Public
-NR	Tha	ThaRen	quantitative reasoning	101	EM Accuracy	Public
-	Ind	IndRen	quantitative reasoning	101	EM Accuracy	Public
-	May	MayRen	quantitative reasoning	101	EM Accuracy	Public
-	Fil	FilRen	quantitative reasoning	101	EM Accuracy	Public
-	Vie	VieRen	quantitative reasoning	101	EM Accuracy	Public
-![image](https://github.com/user-attachments/assets/0bb9cf1b-279e-483f-a8f1-68d60eebb96f)
 
 
 
