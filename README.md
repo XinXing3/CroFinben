@@ -165,14 +165,14 @@ In this section, we provide a detailed performance analysis of FinMA compared to
 |      | Fil      | FilFiQASA       | sentiment analysis       | 233  | F1, Accuracy        | MIT License  | [[2]](#2)  |
 |      | May      | MayFPB          | sentiment analysis       | 970  | F1, Accuracy        | MIT License  | [[1]](#1)  |
 | CR   | Ind      | IndCCFraud      | fraud detection          | 2,098| F1, MCC             | Public       |[[22]](#26to32)  |
-|      | Vie      | VieCraccf       | fraud detection          | 2,279| F1, MCC             | (DbCL) v1.0  |  |
+|      | Vie      | VieCraccf       | fraud detection          | 2,279| F1, MCC             | (DbCL) v1.0  | [[7]](#7)  |
 |      | Fil      | FilLendingClub  | credit scoring           | 2,691| F1, MCC             | CC0 1.0      | [[22]](#26to32)  |
 |      | May      | MayAustralian   | credit scoring           | 133  | F1, MCC             | CC BY 4.0    | [[21]](#21)|
 | FD   | Ind      | IndCikm         | stock movement prediction| 1,139| F1, Accuracy        | Public       | [[25]](#25) |
 |      | Vie      | VieBigdata      | stock movement prediction| 1,139| F1, Accuracy        | Public       |[[23]](#23) |
 |      | Fil      | FilACL18        | stock movement prediction| 1,139| F1, Accuracy        | MIT License  |  [[24]](#24))|
 |      | May      | MayACL18        | stock movement prediction| 1,139| F1, Accuracy        | MIT License  |  [[24]](#24)|
-|      | Tha      | ThaStockA       | stock movement prediction| 1,139| F1, Accuracy        | Public       | |
+|      | Tha      | ThaStockA       | stock movement prediction| 1,139| F1, Accuracy        | Public       |[[8]](#8) |
 | NR   | Tha      | ThaRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       | |
 |      | Ind      | IndRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       | |
 |      | May      | MayRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       ||
@@ -203,9 +203,9 @@ dataset-judul-berita-indonesia/master/detik_news_title.csv).
 
 <span id="6">6.</span> N. P. I. Maharani, A. Purwarianti et al., “Domain-specific language model post-training for indonesian financial nlp,” in 2023 International Conference on Electrical Engineering and Informatics (ICEEI). IEEE, 2023, pp. 1–6.
 
-<span id="7">7.</span> Rasmus Jørgensen, Oliver Brandt, Mareike Hartmann, Xiang Dai, Christian Igel, and Desmond Elliott. 2023. [MultiFin: A Dataset for Multilingual Financial NLP](https://aclanthology.org/2023.findings-eacl.66). In *Findings of the Association for Computational Linguistics: EACL 2023*, pages 894–909, Dubrovnik, Croatia. Association for Computational Linguistics.
+<span id="7">7.</span> D. Feng, Y. Dai et al., “Empowering many, biasing a few: Generalist credit scoring through large language models,” ArXiv, vol. abs/2310.00566, 2023, n. pag. [Online]. Available:https://arxiv.org/abs/2310.00566.
 
-<span id="8">8.</span> Yang, L., Kenny, E.M., Ng, T.L., Yang, Y., Smyth, B., & Dong, R. (2020). [Generating Plausible Counterfactual Explanations for Deep Transformers in Financial Text Classification.](https://arxiv.org/abs/2010.12512) *International Conference on Computational Linguistics*.
+<span id="8">8.</span>J. Zou, H. Cao et al., “Astock: A new dataset and automated stock trading based on stock-specific news analyzing model,” arXiv preprint arXiv:2206.06606, 2022.
 
 <span id="9">9.</span> Chung-Chi Chen, Yu-Min Tseng, Juyeon Kang, Anaïs Lhuissier, Min-Yuh Day, Teng-Tsai Tu, and Hsin-Hsi Chen. 2023. Multi-lingual esg issue identification. In *Proceedings of the Fifth Workshop on Financial Tech- nology and Natural Language Processing (FinNLP) and the Second Multimodal AI For Financial Fore- casting (Muffin)*.
 
