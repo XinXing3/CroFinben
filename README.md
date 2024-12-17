@@ -139,7 +139,7 @@
 ### Key Features
 
 
-- Open Resources**: SeaFBen openly provides Southeast Asian financial datasets included in the evaluation benchmark, featuring custom-built numerical reasoning datasets created in collaboration with Southeast Asian experts, to encourage open research and enhance transparency.
+- **Open Resources**: SeaFBen openly provides Southeast Asian financial datasets included in the evaluation benchmark, featuring custom-built numerical reasoning datasets created in collaboration with Southeast Asian experts, to encourage open research and enhance transparency.
 
 - **Multi-task**: The PIXIU benchmark covers a variety of financial tasks, including 5 Southeast Asian languages, 5 Southeast Asian financial tasks, and 20 financial datasets.
 
