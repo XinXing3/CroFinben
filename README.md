@@ -24,12 +24,12 @@
   
 </div>
 
-<!-- 底部图片部分 -->
+<!-- 底部图片部分
 <div align="center" style="margin-top: 40px;">
     <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbx3AQWiMhxwOvFb7r1PH-h_i5-b3H9xsGVKnkQwbFlA&s' alt='Yunnan University' height='100px' style="margin-right: 30px;">
     <img src='https://i.postimg.cc/CLtkBwz7/57-EDDD9-FB0-DF712-F3-AB627163-C2-1-EF15655-13-FCA.png' alt='Wuhan University Logo' height='100px'>
 </div>
-
+ -->
 
 -----------------
 
