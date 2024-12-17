@@ -410,7 +410,7 @@ TASK_REGISTRY = {
 >  Additionally, you can determine if the labels should be lowercased during the matching process by specifying `LOWER_CASE` in your class definition. This is pertinent since labels are matched based on their appearance in the generated output. For tasks like examinations where the labels are a specific set of capitalized letters such as 'A', 'B', 'C', this should typically be set to False.
 
 ---
-
+<!--
 ## FIT: Financial Instruction Dataset
 
 Our instruction dataset is uniquely tailored for the domain-specific LLM, FinMA. This dataset has been meticulously assembled to fine-tune our model on a diverse range of financial tasks. It features publicly available multi-task and multi-modal data derived from the multiple open released financial datasets.
@@ -593,3 +593,4 @@ PIXIU is licensed under [MIT]. For more details, please see the [MIT](LICENSE) f
 
 [![Star History Chart](https://api.star-history.com/svg?repos=The-FinAI/PIXIU&type=Date)](https://star-history.com/#The-FinAI/PIXIU&Date)
 
+-->
