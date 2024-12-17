@@ -1,5 +1,5 @@
-<div style="width: 100%; height:100%;text-align: center;">
-   <div align="center" style="font-size: 50px !important; font-weight: bold; color: black;">
+<div style="width: 100%; height:100px;text-align: center;">
+   <div align="center" style="font-size: 50px !important; font-weight: bold; color: black;height:100px">
        SeaFBen: Evaluation Benchmark for Southeast Asia
    </div>
 </div>
