@@ -23,36 +23,16 @@
 </div>
 
 
-<div align="left">
-    <sup>1</sup>The Fin AI&emsp;
-    <sup>2</sup>Wuhan University&emsp;
-    <sup>3</sup>The University of Manchester&emsp;
-    <sup>4</sup>University of Florida&emsp;
-    <sup>5</sup>Columbia University&emsp;
-    <sup>6</sup>The Chinese University of Hong Kong, Shenzhen&emsp;
-    <sup>7</sup>Sichuan University&emsp;
-    <sup>8</sup>Yunnan University&emsp;
-    <sup>9</sup>Stevens Institute of Technology&emsp;
-    <sup>10</sup>Stony Brook University&emsp;
-    <sup>11</sup>Nanjin Audit University&emsp;
-    <sup>12</sup>Jiangxi Normal University&emsp;
-    <sup>13</sup>Southwest Jiaotong University
-</div>
 <br />
 
 <div align="left">
-    <img src='https://i.postimg.cc/CLtkBwz7/57-EDDD9-FB0-DF712-F3-AB627163-C2-1-EF15655-13-FCA.png' alt='Wuhan University Logo' height='50px'>&emsp;
-    <img src='https://assets.manchester.ac.uk/corporate/images/design/logo-university-of-manchester.png' alt='Manchester University Logo' height='50px'>&emsp;
-    <img src='https://i.postimg.cc/XY1s2RHD/University-of-Florida-Logo-1536x864.jpg' alt='University of Florida Logo' height='50px'>&emsp;
-    <img src='https://admissions.ucr.edu/sites/default/files/styles/form_preview/public/2020-07/ucr-education-logo-columbia-university.png?itok=-0FD6Ma2' alt='Columbia University Logo' height='50px'>&emsp;
-    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeMTMkJVT6g36_LN-8qJ4nMvgT3vM5spUHV3ITRYbym1CEg4Af5Shlp5jX2sWtDFtTK9I&usqp=CAU' alt='HK University (shenzhen) Logo' height='50px'>&emsp;
-    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToJAAiyqxfFuwro5N9Um9TB5LDkiJNKF3hMMQp3pfC0A&s' alt='Sichuan University' height='50px'>&emsp;
     <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbx3AQWiMhxwOvFb7r1PH-h_i5-b3H9xsGVKnkQwbFlA&s' alt='Yunnan University' height='50px'>&emsp;
-    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS_o8HItSOTkg5M75N59D6V5u9qg7QYfBa_ITxdfEfwQ&s' alt='Stevens Insititute of Technology' height='50px'>&emsp;
-    <img src='https://www.stonybrook.edu/sbu-brand/_images/2015/10/logo_stacked_vert.jpg' alt='Stony Brook University' height='50px'>&emsp;
-    <img src='https://upload.wikimedia.org/wikipedia/en/9/9c/Nanjing_Audit_University_logo.png' alt='Nanjing Audit University' height='50px'>&emsp;
-    <img src='https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Jiangxi_Normal_University.svg/1200px-Jiangxi_Normal_University.svg.png' alt='Jiangxi Normal University' height='50px'>&emsp;
-    <img src='https://i.postimg.cc/k5WpYj0r/SWJTULogo.png' alt='Southwest Jiaotong University Logo' height='50px'>&emsp;
+    <img src='https://i.postimg.cc/CLtkBwz7/57-EDDD9-FB0-DF712-F3-AB627163-C2-1-EF15655-13-FCA.png' alt='Wuhan University Logo' height='50px'>&emsp;
+    
+    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToJAAiyqxfFuwro5N9Um9TB5LDkiJNKF3hMMQp3pfC0A&s' alt='Sichuan University' height='50px'>&emsp;
+   
+
+   
 </div>
 
 -----------------
