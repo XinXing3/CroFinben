@@ -1,10 +1,12 @@
-<div style="width: 100%; height: 100px; text-align: center;">
+<!-- 标题部分 -->
+<div style="width: 100%; height: 100px; text-align: center; background-color: #f4f4f4; padding: 20px 0;">
    <div style="font-size: 50px; font-weight: bold; color: black; line-height: 100px;">
        SeaFBen: Evaluation Benchmark for Southeast Asia
    </div>
 </div>
 
-<div align="center">
+<!-- 作者部分 -->
+<div align="center" style="margin-top: 40px;">
     <div style="font-size: 18px; margin-bottom: 10px;">
         <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Gang Hu</a>
     </div>
@@ -22,14 +24,12 @@
     </div>
 </div>
 
-
-<br />
-
-<div align="left">
-    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbx3AQWiMhxwOvFb7r1PH-h_i5-b3H9xsGVKnkQwbFlA&s' alt='Yunnan University' height='50px'>&emsp;
-    <img src='https://i.postimg.cc/CLtkBwz7/57-EDDD9-FB0-DF712-F3-AB627163-C2-1-EF15655-13-FCA.png' alt='Wuhan University Logo' height='50px'>&emsp;
-   
+<!-- 底部图片部分 -->
+<div align="center" style="margin-top: 40px;">
+    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbx3AQWiMhxwOvFb7r1PH-h_i5-b3H9xsGVKnkQwbFlA&s' alt='Yunnan University' height='50px' style="margin-right: 30px;">
+    <img src='https://i.postimg.cc/CLtkBwz7/57-EDDD9-FB0-DF712-F3-AB627163-C2-1-EF15655-13-FCA.png' alt='Wuhan University Logo' height='50px'>
 </div>
+
 
 -----------------
 
