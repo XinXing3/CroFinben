@@ -4,7 +4,7 @@
        SeaFBen: Evaluation Benchmark for Southeast Asia
    </h1>
 </div>
-   Welcome here, let's get to know SeaFBen together. 
+   Welcome to here, let's get to know SeaFBen together. </br>
    we introduce SeaFBen, the first open-source benchmark for Southeast Asian multilingual financial tasks. Covering 22,068 samples across 20 datasets from the region’s five most populous countries, SeaFBen evaluates five key tasks: Knowledge Understanding(KU), Investment Tendency(IT), Credit Rating(CR), Financial Decision-making(FD), and Numerical Reasoning(NR). It pioneers multilingual financial task evaluation, regional localization, and introduces five new datasets. Evaluating 12 LLMs reveals significant performance differences.
 <!-- 作者部分 -->
 <h1 style="float:left">"Main Contributors"</h1>
