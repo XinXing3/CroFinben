@@ -156,70 +156,34 @@ In this section, we provide a detailed performance analysis of FinMA compared to
 ### Tasks
 
 
-
-| Task | Language | Dataset         | Task                     | Test | Evaluation          | License      |
-|------|----------|-----------------|--------------------------|------|---------------------|--------------|
-| KU   | Tha      | ThaEx           | financial exam           | 631  | Accuracy, Macro F1  | Apache-2.0   |
-|      | Ind      | IndFinComment   | rating prediction        | 1,999| Accuracy, Macro F1  | CC BY-NC 4.0 |
-|      | Ind      | IndFinURL       | url summarization        | 2,834| ROUGE, BERTScore    | Public       |
-| IT   | Ind      | IndFinSent      | sentiment analysis       | 2,000| F1, Accuracy        | Apache-2.0   |
-|      | Fil      | FilFiQASA       | sentiment analysis       | 233  | F1, Accuracy        | MIT License  |
-|      | May      | MayFPB          | sentiment analysis       | 970  | F1, Accuracy        | MIT License  |
-| CR   | Ind      | IndCCFraud      | fraud detection          | 2,098| F1, MCC             | Public       |
-|      | Vie      | VieCraccf       | fraud detection          | 2,279| F1, MCC             | (DbCL) v1.0  |
-|      | Fil      | FilLendingClub  | credit scoring           | 2,691| F1, MCC             | CC0 1.0      |
-|      | May      | MayAustralian   | credit scoring           | 133  | F1, MCC             | CC BY 4.0    |
-| FD   | Ind      | IndCikm         | stock movement prediction| 1,139| F1, Accuracy        | Public       |
-|      | Vie      | VieBigdata      | stock movement prediction| 1,139| F1, Accuracy        | Public       |
-|      | Fil      | FilACL18        | stock movement prediction| 1,139| F1, Accuracy        | MIT License  |
-|      | May      | MayACL18        | stock movement prediction| 1,139| F1, Accuracy        | MIT License  |
-|      | Tha      | ThaStockA       | stock movement prediction| 1,139| F1, Accuracy        | Public       |
-| NR   | Tha      | ThaRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       |
-|      | Ind      | IndRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       |
-|      | May      | MayRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       |
-|      | Fil      | FilRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       |
-|      | Vie      | VieRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       |
-
+| Task | Language | Dataset         | Task                     | Test | Evaluation          | License      | Paper      |
+|------|----------|-----------------|--------------------------|------|---------------------|--------------|------------|
+| KU   | Tha      | ThaEx           | financial exam           | 631  | Accuracy, Macro F1  | Apache-2.0   | |
+|      | Ind      | IndFinComment   | rating prediction        | 1,999| Accuracy, Macro F1  | CC BY-NC 4.0 |   |
+|      | Ind      | IndFinURL       | url summarization        | 2,834| ROUGE, BERTScore    | Public       |  |
+| IT   | Ind      | IndFinSent      | sentiment analysis       | 2,000| F1, Accuracy        | Apache-2.0   |  |
+|      | Fil      | FilFiQASA       | sentiment analysis       | 233  | F1, Accuracy        | MIT License  | [[2]](#2)  |
+|      | May      | MayFPB          | sentiment analysis       | 970  | F1, Accuracy        | MIT License  | [[1]](#1)  |
+| CR   | Ind      | IndCCFraud      | fraud detection          | 2,098| F1, MCC             | Public       |[[22]](#26to32)  |
+|      | Vie      | VieCraccf       | fraud detection          | 2,279| F1, MCC             | (DbCL) v1.0  |  |
+|      | Fil      | FilLendingClub  | credit scoring           | 2,691| F1, MCC             | CC0 1.0      | [[22]](#26to32)  |
+|      | May      | MayAustralian   | credit scoring           | 133  | F1, MCC             | CC BY 4.0    | [[21]](#21)|
+| FD   | Ind      | IndCikm         | stock movement prediction| 1,139| F1, Accuracy        | Public       | [[25]](#25) |
+|      | Vie      | VieBigdata      | stock movement prediction| 1,139| F1, Accuracy        | Public       |[[23]](#23) |
+|      | Fil      | FilACL18        | stock movement prediction| 1,139| F1, Accuracy        | MIT License  |  [[24]](#24))|
+|      | May      | MayACL18        | stock movement prediction| 1,139| F1, Accuracy        | MIT License  |  [[24]](#24)|
+|      | Tha      | ThaStockA       | stock movement prediction| 1,139| F1, Accuracy        | Public       | |
+| NR   | Tha      | ThaRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       | |
+|      | Ind      | IndRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       | |
+|      | May      | MayRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       ||
+|      | Fil      | FilRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       | |
+|      | Vie      | VieRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       ||
 
 
 
 
-| Data                  | Task                             | Raw    | Data Types                | Modalities        | License         | Paper |
-| --------------------- | -------------------------------- | ------ | ------------------------- | ----------------- | --------------- | ----- |
-| FPB                   | sentiment analysis               | 4,845  | news                      | text              | CC BY-SA 3.0    | [[1]](#1) |
-| FiQA-SA               | sentiment analysis               | 1,173  | news headlines, tweets    | text              | Public          | [[2]](#2) |
-| TSA | sentiment analysis | 561 | news headlines | text | CC BY-NC-SA 4.0 | [[3]](#3)       |
-| FOMC                  | hawkish-dovish classification    | 496    | FOMC transcripts          | text              | CC BY-NC 4.0 | [[4]](#4)       |
-| Headlines             | news headline classification     | 11,412 | news headlines            | text              | CC BY-SA 3.0    | [[5]](#5) |
-| FinArg-ECC-Task1      | argument unit classification     | 969    | earnings conference call  | text              | CC BY-NC-SA 4.0 | [[6]](#6) |
-| FinArg-ECC-Task2      | argument relation classification | 690    | earnings conference call  | text              | CC BY-NC-SA 4.0 | [[6]](#6) |
-| Multifin EN        | multi-class classification | 546 | article headlines | text          | Public | [[7]](#7) |
-| M&A                     | deal completeness classification  | 500    | news articles, tweets           | text              | Public          | [[8]](#8) |
-| MLESG EN                | ESG Issue Identification          | 300    | news articles                   | text              | CC BY-NC-ND     | [[9]](#9) |
-| NER                     | named entity recognition          | 1,366  | financial agreements            | text              | CC BY-SA 3.0    | [[10]](#10) |
-| Finer Ord             | named entity recognition         | 1,080  | news articles             | text              | CC BY-NC 4.0    | [[11]](#11) |
-| FinRED                | relation extraction              | 1,070  | earning call transcipts   | text              | Public          | [[12]](#12) |
-| FinCausual 2020 Task1 | causal classification            | 8,630  | news articles, SEC        | text              | CC BY 4.0       | [[13]](#13) |
-| FinCausual 2020 Task2 | causal detection                 | 226    | news articles, SEC        | text              | CC BY 4.0       | [[13]](#13) |
-| FinQA                 | question answering               | 8,281  | earnings reports          | text, table       | MIT License     | [[14]](#14) |
-| TatQA                 | question answering               | 1,670  | financial reports         | text, table       | MIT License     | [[15]](#15) |
-| FNXL                  | numeric labeling                 | 318    | SEC                       | text              | Public          | [[16]](#16) |
-| FSRL                  | token classification             | 97     | news articles             | text              | MIT License     | [[17]](#17) |
-| ECTSUM                | text summarization               | 495    | earning call transcipts   | text              | Public          | [[18]](#18) |
-| EDTSUM                | text summarization               | 2000   | news articles             | text              | Public          | [[19]](#19) |
-| German                | credit scoring                   | 1000   | credit records            | table             | CC BY 4.0       | [[20]](#20) |
-| Australian            | credit scoring                   | 690    | credit records            | table             | CC BY 4.0       | [[21]](#21) |
-| Lending Club | credit scoring | 1,3453 | financial information | table | CC0 1.0 | [[22]](#26to32) |
-| BigData22             | stock movement prediction        | 7,164  | tweets, historical prices | text, time series | Public          | [[23]](#23) |
-| ACL18                 | stock movement prediction        | 27,053 | tweets, historical prices | text, time series | MIT License     | [[24]](#24) |
-| CIKM18                | stock movement prediction        | 4,967  | tweets, historical prices | text, time series | Public          | [[25]](#25) |
-| ConvFinQA             | multi-turn question answering    | 1,490  | earnings reports          | text, table       | MIT License     | [[26]](#26) |
-| Credit Card Fraud     | Fraud Detection                  | 11,392 | financial information     | table             | (DbCL) v1.0     | [[22]](#26to32) |
-| ccFraud               | Fraud Detection                  | 10,485 | financial information     | table             | Public          | [[22]](#26to32) |
-| Polish                | Financial Distress Identification| 8,681  | financial status features | table             | CC BY 4.0       | [[22]](#26to32) |
-|Taiwan Economic Journal| Financial Distress Identification| 6,819  | financial status features | table             | CC BY 4.0       | [[22]](#26to32) |
-| PortoSeguro           | Claim Analysis                   | 11,904 | claim and financial information | table             | Public          | [[22]](#26to32) |
-| Travel Insurance      | Claim Analysis                   | 12,665 | claim and financial information | table             | (ODbL) v1.0     | [[22]](#26to32) |
+
+
 
 
 
