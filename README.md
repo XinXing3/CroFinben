@@ -12,7 +12,8 @@
     <!-- 贡献者1 -->
     <div style="font-size: 18px; margin-bottom: 20px;">
         <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Gang Hu</a><br>
-        <span style="font-size: 16px; color: #555;">Professor, Yunnan University</span>
+        <span style="font-size: 16px; color: #555;"> Yunnan University --</span>
+       <span style="font-size: 16px; color: #555;"> Cross-lingual Intelligent Information Processing</span>
     </div>
     
     <!-- 贡献者2 -->
