@@ -1,76 +1,47 @@
-<p align="center" width="100%">
-<img src="https://i.postimg.cc/xTpWgq3L/pixiu-logo.png"  width="100%" height="100%">
-</p>
-<div>
-<div align="left">
-    <a target='_blank'>Qianqian Xie<sup>1</sup></span>&emsp;
-    <a target='_blank'>Weiguang Han<sup>2</sup></span>&emsp;
-    <a target='_blank'>Zhengyu Chen<sup>2</sup></span>&emsp;
-    <a target='_blank'>Ruoyu Xiang<sup>1</sup></a>&emsp;
-    <a target='_blank'>Xiao Zhang<sup>1</sup></a>&emsp;
-    <a target='_blank'>Yueru He<sup>1</sup></a>&emsp;
-    <a target='_blank'>Mengxi Xiao<sup>2</sup></a>&emsp;
-    <a target='_blank'>Dong Li<sup>2</sup></a>&emsp;
-    <a target='_blank'>Yongfu Dai<sup>7</sup></a>&emsp;
-    <a target='_blank'>Duanyu Feng<sup>7</sup></a>&emsp;
-    <a target='_blank'>Yijing Xu<sup>1</sup></a>&emsp;
-    <a target='_blank'>Haoqiang Kang<sup>5</sup></a>&emsp;
-    <a target='_blank'>Ziyan Kuang<sup>12</sup></a>&emsp;
-    <a target='_blank'>Chenhan Yuan<sup>3</sup></a>&emsp;
-    <a target='_blank'>Kailai Yang<sup>3</sup></a>&emsp;
-    <a target='_blank'>Zheheng Luo<sup>3</sup></a>&emsp;
-    <a target='_blank'>Tianlin Zhang<sup>3</sup></a>&emsp;
-    <a target='_blank'>Zhiwei Liu<sup>3</sup></a>&emsp;
-    <a target='_blank'>Guojun Xiong<sup>10</sup></a>&emsp;
-    <a target='_blank'>Zhiyang Deng<sup>9</sup></a>&emsp;
-    <a target='_blank'>Yuechen Jiang<sup>9</sup></a>&emsp;
-    <a target='_blank'>Zhiyuan Yao<sup>9</sup></a>&emsp;
-    <a target='_blank'>Haohang Li<sup>9</sup></a>&emsp;
-    <a target='_blank'>Yangyang Yu<sup>9</sup></a>&emsp;
-    <a target='_blank'>Gang Hu<sup>8</sup></a>&emsp;
-    <a target='_blank'>Jiajia Huang<sup>11</sup></a>&emsp;
-    <a target='_blank'>Xiao-Yang Liu<sup>5</sup></a>&emsp;
-    <a href='https://warrington.ufl.edu/directory/person/12693/' target='_blank'>Alejandro Lopez-Lira<sup>4</sup></a>&emsp;
-    <a target='_blank'>Benyou Wang<sup>6</sup></a>&emsp;
-    <a target='_blank'>Yanzhao Lai<sup>13</sup></a>&emsp;
-    <a target='_blank'>Hao Wang<sup>7</sup></a>&emsp;
-    <a target='_blank'>Min Peng<sup>2*</sup></a>&emsp;
-    <a target='_blank'>Sophia Ananiadou<sup>3</sup></a>&emsp;
-    <a href='' target='_blank'>Jimin Huang<sup>1</sup></a>
+<!-- 标题部分 -->
+<div style="width: 100%; height: 100px; text-align: center; background-color: #f4f4f4; padding: 20px 0;">
+   <h1 style="font-size: 50px; font-weight: bold; color: black; line-height: 100px;">
+       SeaFBen: Evaluation Benchmark for Southeast Asia
+   </h1>
 </div>
-<br />
+   Welcome to here, let's get to know SeaFBen together. </br>
+   we introduce SeaFBen, the first open-source benchmark for Southeast Asian multilingual financial tasks. Covering 22,068 samples across 20 datasets from the region’s five most populous countries, SeaFBen evaluates five key tasks: Knowledge Understanding(KU), Investment Tendency(IT), Credit Rating(CR), Financial Decision-making(FD), and Numerical Reasoning(NR). It pioneers multilingual financial task evaluation, regional localization, and introduces five new datasets. Evaluating 12 LLMs reveals significant performance differences.
+<!-- 作者部分 -->
 
-<div align="left">
-    <sup>1</sup>The Fin AI&emsp;
-    <sup>2</sup>Wuhan University&emsp;
-    <sup>3</sup>The University of Manchester&emsp;
-    <sup>4</sup>University of Florida&emsp;
-    <sup>5</sup>Columbia University&emsp;
-    <sup>6</sup>The Chinese University of Hong Kong, Shenzhen&emsp;
-    <sup>7</sup>Sichuan University&emsp;
-    <sup>8</sup>Yunnan University&emsp;
-    <sup>9</sup>Stevens Institute of Technology&emsp;
-    <sup>10</sup>Stony Brook University&emsp;
-    <sup>11</sup>Nanjin Audit University&emsp;
-    <sup>12</sup>Jiangxi Normal University&emsp;
-    <sup>13</sup>Southwest Jiaotong University
-</div>
-<br />
+   
+<h1 align="left">Main Contributors</h1>
 
-<div align="left">
-    <img src='https://i.postimg.cc/CLtkBwz7/57-EDDD9-FB0-DF712-F3-AB627163-C2-1-EF15655-13-FCA.png' alt='Wuhan University Logo' height='50px'>&emsp;
-    <img src='https://assets.manchester.ac.uk/corporate/images/design/logo-university-of-manchester.png' alt='Manchester University Logo' height='50px'>&emsp;
-    <img src='https://i.postimg.cc/XY1s2RHD/University-of-Florida-Logo-1536x864.jpg' alt='University of Florida Logo' height='50px'>&emsp;
-    <img src='https://admissions.ucr.edu/sites/default/files/styles/form_preview/public/2020-07/ucr-education-logo-columbia-university.png?itok=-0FD6Ma2' alt='Columbia University Logo' height='50px'>&emsp;
-    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeMTMkJVT6g36_LN-8qJ4nMvgT3vM5spUHV3ITRYbym1CEg4Af5Shlp5jX2sWtDFtTK9I&usqp=CAU' alt='HK University (shenzhen) Logo' height='50px'>&emsp;
-    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToJAAiyqxfFuwro5N9Um9TB5LDkiJNKF3hMMQp3pfC0A&s' alt='Sichuan University' height='50px'>&emsp;
-    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbx3AQWiMhxwOvFb7r1PH-h_i5-b3H9xsGVKnkQwbFlA&s' alt='Yunnan University' height='50px'>&emsp;
-    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS_o8HItSOTkg5M75N59D6V5u9qg7QYfBa_ITxdfEfwQ&s' alt='Stevens Insititute of Technology' height='50px'>&emsp;
-    <img src='https://www.stonybrook.edu/sbu-brand/_images/2015/10/logo_stacked_vert.jpg' alt='Stony Brook University' height='50px'>&emsp;
-    <img src='https://upload.wikimedia.org/wikipedia/en/9/9c/Nanjing_Audit_University_logo.png' alt='Nanjing Audit University' height='50px'>&emsp;
-    <img src='https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Jiangxi_Normal_University.svg/1200px-Jiangxi_Normal_University.svg.png' alt='Jiangxi Normal University' height='50px'>&emsp;
-    <img src='https://i.postimg.cc/k5WpYj0r/SWJTULogo.png' alt='Southwest Jiaotong University Logo' height='50px'>&emsp;
+<div align="left" style="margin-top: 40px;">
+
+1.<div style="font-size: 18px; margin-bottom: 20px;">
+        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Gang Hu</a><br />
+        <span style="font-size: 16px; color: #555;">Cross-lingual Intelligent Information Processing, Yunnan University</span>
+   </div>
+    
+
+2.<div style="font-size: 18px; margin-bottom: 20px;">
+        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Qingqing Wang</a><br />
+        <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
+    </div>
+
+3.<div style="font-size: 18px; margin-bottom: 20px;">
+        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Kang Wang</a><br />
+        <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
+  </div>   
+
+ 
+4. <div style="font-size: 18px; margin-bottom: 20px;">
+        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Ke Qin</a><br />
+        <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
+    </div>
 </div>
+
+<!-- 底部图片部分
+<div align="center" style="margin-top: 40px;">
+    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbx3AQWiMhxwOvFb7r1PH-h_i5-b3H9xsGVKnkQwbFlA&s' alt='Yunnan University' height='100px' style="margin-right: 30px;">
+    <img src='https://i.postimg.cc/CLtkBwz7/57-EDDD9-FB0-DF712-F3-AB627163-C2-1-EF15655-13-FCA.png' alt='Wuhan University Logo' height='100px'>
+</div>
+ -->
 
 -----------------
 
