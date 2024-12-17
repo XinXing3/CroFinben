@@ -64,11 +64,7 @@
 
 **Languages**
 
-- [Tha](README.md)
-- [Ind](README.es.md)
-- [Vie](README.zh.md)
-- [May]
-- [Fil]
+- [Tha] - [Ind]  - [Vie]  - [May]  - [Fil]
 
 **Papers**
 
