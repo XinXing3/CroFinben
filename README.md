@@ -9,18 +9,30 @@
 <!-- 作者部分 -->
 <h1 style="float:left">Main Contributors</h1>
 <div align="left" style="margin-top: 40px;">
-    <div style="font-size: 18px; margin-bottom: 10px;">
-        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Gang Hu</a>
+    <!-- 贡献者1 -->
+    <div style="font-size: 18px; margin-bottom: 20px;">
+        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Gang Hu</a><br>
+        <span style="font-size: 16px; color: #555;">Professor, Yunnan University</span>
     </div>
-    <div style="font-size: 18px; margin-bottom: 10px;">
-        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Qingqing Wang</a>
+    
+    <!-- 贡献者2 -->
+    <div style="font-size: 18px; margin-bottom: 20px;">
+        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Qingqing Wang</a><br>
+        <span style="font-size: 16px; color: #555;">Senior Researcher, Tsinghua University</span>
     </div>
-    <div style="font-size: 18px; margin-bottom: 10px;">
-        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Kang Wang</a>
+
+    <!-- 贡献者3 -->
+    <div style="font-size: 18px; margin-bottom: 20px;">
+        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Kang Wang</a><br>
+        <span style="font-size: 16px; color: #555;">Research Fellow, Peking University</span>
     </div>   
-    <div style="font-size: 18px; margin-bottom: 10px;">
-        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Ke Qin</a>
+
+    <!-- 贡献者4 -->
+    <div style="font-size: 18px; margin-bottom: 20px;">
+        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Ke Qin</a><br>
+        <span style="font-size: 16px; color: #555;">Assistant Professor, Zhejiang University</span>
     </div>
+
   
 </div>
 
