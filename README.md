@@ -7,13 +7,15 @@
    Welcome to here, let's get to know SeaFBen together. </br>
    we introduce SeaFBen, the first open-source benchmark for Southeast Asian multilingual financial tasks. Covering 22,068 samples across 20 datasets from the region’s five most populous countries, SeaFBen evaluates five key tasks: Knowledge Understanding(KU), Investment Tendency(IT), Credit Rating(CR), Financial Decision-making(FD), and Numerical Reasoning(NR). It pioneers multilingual financial task evaluation, regional localization, and introduces five new datasets. Evaluating 12 LLMs reveals significant performance differences.
 <!-- 作者部分 -->
-<h1 style="float:left">Main Contributors</h1>
+
+   
+  <h1 style="float:left">Main Contributors</h1>
 <div align="left" style="margin-top: 40px;">
     <!-- 贡献者1 -->
     <div style="font-size: 18px; margin-bottom: 20px;">
         <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Gang Hu</a><br>
-        <span style="font-size: 16px; color: #555;"> Yunnan University --</span>
-       <span style="font-size: 16px; color: #555;"> Cross-lingual Intelligent Information Processing</span>
+        <span style="font-size: 16px; color: #555;">Yunnan University --</span>
+        <span style="font-size: 16px; color: #555;">Cross-lingual Intelligent Information Processing</span>
     </div>
     
     <!-- 贡献者2 -->
@@ -33,8 +35,6 @@
         <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Ke Qin</a><br>
         <span style="font-size: 16px; color: #555;">Assistant Professor, Zhejiang University</span>
     </div>
-
-  
 </div>
 
 <!-- 底部图片部分
