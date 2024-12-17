@@ -53,44 +53,22 @@
 
 -----------------
 
-![](https://img.shields.io/badge/pixiu-v0.1-gold)
+<!-- ![](https://img.shields.io/badge/pixiu-v0.1-gold) -->
 ![](https://black.readthedocs.io/en/stable/_static/license.svg)
 [![Discord](https://img.shields.io/discord/1146837080798933112)](https://discord.gg/HRWpUmKB)
-
+<!-- 
 [Pixiu Paper](https://arxiv.org/abs/2306.05443) | [FinBen Leaderboard](https://huggingface.co/spaces/finosfoundation/Open-Financial-LLM-Leaderboard)
+ -->
 
-**Disclaimer**
 
-This repository and its contents are provided for **academic and educational purposes only**. None of the material constitutes financial, legal, or investment advice. No warranties, express or implied, are offered regarding the accuracy, completeness, or utility of the content. The authors and contributors are not responsible for any errors, omissions, or any consequences arising from the use of the information herein. Users should exercise their own judgment and consult professionals before making any financial, legal, or investment decisions. The use of the software and information contained in this repository is entirely at the user's own risk.
-
-**By using or accessing the information in this repository, you agree to indemnify, defend, and hold harmless the authors, contributors, and any affiliated organizations or persons from any and all claims or damages.**
-
-**📢 Update (Date: 09-22-2023)**
-
-🚀 We're thrilled to announce that our paper, "PIXIU: A Comprehensive Benchmark, Instruction Dataset and Large Language Model for Finance", has been accepted by NeurIPS 2023 Track Datasets and Benchmarks!
-
-**📢 Update (Date: 10-08-2023)**
-
-🌏 We're proud to share that the enhanced versions of FinBen, which now support both Chinese and Spanish!
-
-**📢 Update (Date: 02-20-2024)**
-
-🌏 We're delighted to share that our paper, "The FinBen: An Holistic Financial Benchmark for Large Language Models", is now available at [FinBen](https://arxiv.org/abs/2402.12659).
-
-**📢 Update (Date: 05-02-2024)**
-
-🌏 We're pleased to invite you to attend the IJCAI2024-challenge, "Financial Challenges in Large Language Models - FinLLM", the starter-kit is available at [Starter-kit](README.ijcai_challenge.md).
-
-**Checkpoints:** 
-
-- [FinMA v0.1 (NLP 7B version)](https://huggingface.co/TheFinAI/finma-7b-nlp)
-- [FinMA v0.1 (Full 7B version)](https://huggingface.co/TheFinAI/finma-7b-full)
 
 **Languages**
 
-- [English](README.md)
-- [Spainish](README.es.md)
-- [Chinese](README.zh.md)
+- [Tha](README.md)
+- [Ind](README.es.md)
+- [Vie](README.zh.md)
+- [May]
+- [Fil]
 
 **Papers**
 
