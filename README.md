@@ -164,14 +164,14 @@ In this section, we provide a detailed performance analysis of FinMA compared to
 | IT   | Ind      | IndFinSent      | sentiment analysis       | 2,000| F1, Accuracy        | Apache-2.0   | [[6]](#6)  |
 |      | Fil      | FilFiQASA       | sentiment analysis       | 233  | F1, Accuracy        | MIT License  | [[2]](#2)  |
 |      | May      | MayFPB          | sentiment analysis       | 970  | F1, Accuracy        | MIT License  | [[1]](#1)  |
-| CR   | Ind      | IndCCFraud      | fraud detection          | 2,098| F1, MCC             | Public       |[[22]](#26to32)  |
+| CR   | Ind      | IndCCFraud      | fraud detection          | 2,098| F1, MCC             | Public       |[[10]](#10)  |
 |      | Vie      | VieCraccf       | fraud detection          | 2,279| F1, MCC             | (DbCL) v1.0  | [[7]](#7)  |
-|      | Fil      | FilLendingClub  | credit scoring           | 2,691| F1, MCC             | CC0 1.0      | [[22]](#26to32)  |
-|      | May      | MayAustralian   | credit scoring           | 133  | F1, MCC             | CC BY 4.0    | [[21]](#21)|
-| FD   | Ind      | IndCikm         | stock movement prediction| 1,139| F1, Accuracy        | Public       | [[25]](#25) |
-|      | Vie      | VieBigdata      | stock movement prediction| 1,139| F1, Accuracy        | Public       |[[23]](#23) |
-|      | Fil      | FilACL18        | stock movement prediction| 1,139| F1, Accuracy        | MIT License  |  [[24]](#24))|
-|      | May      | MayACL18        | stock movement prediction| 1,139| F1, Accuracy        | MIT License  |  [[24]](#24)|
+|      | Fil      | FilLendingClub  | credit scoring           | 2,691| F1, MCC             | CC0 1.0      | [[10]](#10)  |
+|      | May      | MayAustralian   | credit scoring           | 133  | F1, MCC             | CC BY 4.0    | [[9]](#9)|
+| FD   | Ind      | IndCikm         | stock movement prediction| 1,139| F1, Accuracy        | Public       | [[13]](#13) |
+|      | Vie      | VieBigdata      | stock movement prediction| 1,139| F1, Accuracy        | Public       |[[11]](#11) |
+|      | Fil      | FilACL18        | stock movement prediction| 1,139| F1, Accuracy        | MIT License  |  [[12]](#12))|
+|      | May      | MayACL18        | stock movement prediction| 1,139| F1, Accuracy        | MIT License  |  [[12]](#12)|
 |      | Tha      | ThaStockA       | stock movement prediction| 1,139| F1, Accuracy        | Public       |[[8]](#8) |
 | NR   | Tha      | ThaRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       | |
 |      | Ind      | IndRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       | |
@@ -207,41 +207,23 @@ dataset-judul-berita-indonesia/master/detik_news_title.csv).
 
 <span id="8">8.</span>J. Zou, H. Cao et al., “Astock: A new dataset and automated stock trading based on stock-specific news analyzing model,” arXiv preprint arXiv:2206.06606, 2022.
 
-<span id="9">9.</span> Chung-Chi Chen, Yu-Min Tseng, Juyeon Kang, Anaïs Lhuissier, Min-Yuh Day, Teng-Tsai Tu, and Hsin-Hsi Chen. 2023. Multi-lingual esg issue identification. In *Proceedings of the Fifth Workshop on Financial Tech- nology and Natural Language Processing (FinNLP) and the Second Multimodal AI For Financial Fore- casting (Muffin)*.
 
-<span id="10">10.</span> Julio Cesar Salinas Alvarado, Karin Verspoor, and Timothy Baldwin. 2015. Domain adaption of named entity recognition to support credit risk assessment. In Proceedings of the Australasian Language Technology Association Workshop 2015. 84–90.
 
-<span id="11">11.</span> Shah A, Vithani R, Gullapalli A, et al. Finer: Financial named entity recognition dataset and weak-supervision model[J]. arXiv preprint arXiv:2302.11157, 2023.
 
-<span id="12">12.</span> Sharma, Soumya et al. “FinRED: A Dataset for Relation Extraction in Financial Domain.” *Companion Proceedings of the Web Conference 2022* (2022): n. pag.
 
-<span id="13">13.</span> Dominique Mariko, Hanna Abi-Akl, Estelle Labidurie, Stephane Durfort, Hugues De Mazancourt, and Mahmoud El-Haj. 2020. [The Financial Document Causality Detection Shared Task (FinCausal 2020)](https://aclanthology.org/2020.fnp-1.3). In *Proceedings of the 1st Joint Workshop on Financial Narrative Processing and MultiLing Financial Summarisation*, pages 23–32, Barcelona, Spain (Online). COLING.
 
-<span id="14">14.</span> Zhiyu Chen, Wenhu Chen, Charese Smiley, Sameena Shah, Iana Borova, Dylan Langdon, Reema Moussa, Matt Beane, Ting-Hao Huang, Bryan R Routledge, et al . 2021. FinQA: A Dataset of Numerical Reasoning over Financial Data. In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. 3697–3711.
 
-<span id="15">15.</span> Zhu, Fengbin, Wenqiang Lei, Youcheng Huang, Chao Wang, Shuo Zhang, Jiancheng Lv, Fuli Feng and Tat-Seng Chua. “TAT-QA: A Question Answering Benchmark on a Hybrid of Tabular and Textual Content in Finance.” *ArXiv* abs/2105.07624 (2021): n. pag.
+<span id="21">9.</span> Quinlan,Ross. Statlog (Australian Credit Approval). UCI Machine Learning Repository. https://doi.org/10.24432/C59012.
 
-<span id="16">16.</span> Soumya Sharma, Subhendu Khatuya, Manjunath Hegde, Afreen Shaikh, Koustuv Dasgupta, Pawan Goyal, and Niloy Ganguly. 2023. [Financial Numeric Extreme Labelling: A dataset and benchmarking](https://aclanthology.org/2023.findings-acl.219). In *Findings of the Association for Computational Linguistics: ACL 2023*, pages 3550–3561, Toronto, Canada. Association for Computational Linguistics.
+<span id="22">10.</span> Duanyu Feng, Yongfu Dai, Jimin Huang, Yifang Zhang, Qianqian Xie, Weiguang Han, Alejandro Lopez-Lira, Hao Wang. 2023. Empowering Many, Biasing a Few: Generalist Credit Scoring through Large Language Models. *ArXiv* abs/2310.00566 (2023): n. pag.
 
-<span id="17">17.</span> Matthew Lamm, Arun Chaganty, Christopher D. Manning, Dan Jurafsky, and Percy Liang. 2018. [Textual Analogy Parsing: What’s Shared and What’s Compared among Analogous Facts](https://aclanthology.org/D18-1008). In *Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing*, pages 82–92, Brussels, Belgium. Association for Computational Linguistics.
+<span id="23">11.</span> Yejun Soun, Jaemin Yoo, Minyong Cho, Jihyeong Jeon, and U Kang. 2022. Accurate Stock Movement Prediction with Self-supervised Learning from Sparse Noisy Tweets. In 2022 IEEE International Conference on Big Data (Big Data). IEEE, 1691–1700.
 
-<span id="18">18.</span> Rajdeep Mukherjee, Abhinav Bohra, Akash Banerjee, Soumya Sharma, Manjunath Hegde, Afreen Shaikh, Shivani Shrivastava, Koustuv Dasgupta, Niloy Ganguly, Saptarshi Ghosh, and Pawan Goyal. 2022. [ECTSum: A New Benchmark Dataset For Bullet Point Summarization of Long Earnings Call Transcripts](https://aclanthology.org/2022.emnlp-main.748). In *Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing*, pages 10893–10906, Abu Dhabi, United Arab Emirates. Association for Computational Linguistics.
+<span id="24">12.</span> Yumo Xu and Shay B Cohen. 2018. Stock movement prediction from tweets and historical prices. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 1970–1979.
 
-<span id="19">19.</span> Zhihan Zhou, Liqian Ma, and Han Liu. 2021. [Trade the Event: Corporate Events Detection for News-Based Event-Driven Trading](https://aclanthology.org/2021.findings-acl.186). In *Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021*, pages 2114–2124, Online. Association for Computational Linguistics.
+<span id="25">13.</span> Huizhe Wu, Wei Zhang, Weiwei Shen, and Jun Wang. 2018. Hybrid deep sequential modeling for social text-driven stock prediction. In Proceedings of the 27th ACM international conference on information and knowledge management. 1627–1630.
 
-<span id="20">20.</span> Hofmann,Hans. (1994). Statlog (German Credit Data). UCI Machine Learning Repository. https://doi.org/10.24432/C5NC77.
 
-<span id="21">21.</span> Quinlan,Ross. Statlog (Australian Credit Approval). UCI Machine Learning Repository. https://doi.org/10.24432/C59012.
-
-<span id="26to32">22.</span> Duanyu Feng, Yongfu Dai, Jimin Huang, Yifang Zhang, Qianqian Xie, Weiguang Han, Alejandro Lopez-Lira, Hao Wang. 2023. Empowering Many, Biasing a Few: Generalist Credit Scoring through Large Language Models. *ArXiv* abs/2310.00566 (2023): n. pag.
-
-<span id="23">23.</span> Yejun Soun, Jaemin Yoo, Minyong Cho, Jihyeong Jeon, and U Kang. 2022. Accurate Stock Movement Prediction with Self-supervised Learning from Sparse Noisy Tweets. In 2022 IEEE International Conference on Big Data (Big Data). IEEE, 1691–1700.
-
-<span id="24">24.</span> Yumo Xu and Shay B Cohen. 2018. Stock movement prediction from tweets and historical prices. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 1970–1979.
-
-<span id="25">25.</span> Huizhe Wu, Wei Zhang, Weiwei Shen, and Jun Wang. 2018. Hybrid deep sequential modeling for social text-driven stock prediction. In Proceedings of the 27th ACM international conference on information and knowledge management. 1627–1630.
-
-<span id="26">26.</span> Zhiyu Chen, Shiyang Li, Charese Smiley, Zhiqiang Ma, Sameena Shah, and William Yang Wang. 2022. ConvFinQA: Exploring the Chain of Numerical Reasoning in Conversational Finance Question Answering. In Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing, pages 6279–6292, Abu Dhabi, United Arab Emirates. Association for Computational Linguistics.
 
 | **FinTask**  | **Dataset**      | **Metrics**  | **ChatGPT** | **LLaMA2** | **PolyLM** | **SeaLLM-V2** | **LLaMA3** | **PhoGpt** | **Typhoon** | **SeaLLM-V2.5** | **SeaLLM-V3** | **Sailor** | **Qwen2** | **Gemma** |
 |--------------|------------------|--------------|-------------|------------|------------|---------------|------------|------------|-------------|-----------------|----------------|------------|----------|----------|
