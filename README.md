@@ -149,11 +149,37 @@
 
 ---
 
-## FinBen 2.0: Financial Language Understanding and Prediction Evaluation Benchmark
+## SeaFBen Evalution Benchmark result: The evaluation results of 12 representative large models on SeaFBen.
 
 In this section, we provide a detailed performance analysis of FinMA compared to other leading models, including ChatGPT, GPT-4, and BloombergGPT et al. For this analysis, we've chosen a range of tasks and metrics that span various aspects of financial Natural Language Processing and financial prediction. All model results of FinBen can be found on our [leaderboard](https://huggingface.co/spaces/TheFinAI/flare)!
 
 ### Tasks
+
+Data	Task	Raw	Data Types	Modalities	License	Paper
+ThaEx	financial exam	631	exam	text	Apache-2.0	
+IndFinComment	financial comment classification	1,999	comments	text	CC BY-NC 4.0	
+IndFinURL	URL summarization	2,834	URLs	text	Public	
+IndFinSent	sentiment analysis	2,000	financial comments	text	Apache-2.0	
+FilFiQASA	sentiment analysis	233	financial texts	text	MIT License	
+MayFPB	sentiment analysis	970	financial texts	text	MIT License	
+IndCCFraud	fraud detection	2,098	credit card transactions	text	Public	
+VieCraccf	fraud detection	2,279	credit card transactions	text	(DbCL) v1.0	
+FilLendingClub	credit scoring	2,691	loan applications	text	CC0 1.0	
+MayAustralian	credit scoring	133	loan applications	text	CC BY 4.0	
+IndCikm	stock movement prediction	1,139	stock data	text, time series	Public	
+VieBigdata	stock movement prediction	1,139	stock data	text, time series	Public	
+FilACL18	stock movement prediction	1,139	stock data	text, time series	MIT License	
+MayACL18	stock movement prediction	1,139	stock data	text, time series	MIT License	
+ThaStockA	stock movement prediction	1,139	stock data	text, time series	Public	
+ThaRen	quantitative reasoning	101	numerical problems	text	Public	
+IndRen	quantitative reasoning	101	numerical problems	text	Public	
+MayRen	quantitative reasoning	101	numerical problems	text	Public	
+FilRen	quantitative reasoning	101	numerical problems	text	Public	
+VieRen	quantitative reasoning	101	numerical problems	text	Public	
+
+
+
+
 
 | Data                  | Task                             | Raw    | Data Types                | Modalities        | License         | Paper |
 | --------------------- | -------------------------------- | ------ | ------------------------- | ----------------- | --------------- | ----- |
