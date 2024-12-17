@@ -4,7 +4,7 @@
        SeaFBen: Evaluation Benchmark for Southeast Asia
    </h1>
 </div>
-
+Large language models (LLMs) excel in general financial tasks and low-resource languages, but their potential in Southeast Asia’s multilingual financial domain remains underexplored due to cultural diversity, data scarcity, and task complexity. To address this, we introduce SeaFBen, the first open-source benchmark for Southeast Asian multilingual financial tasks. Covering 22,068 samples across 20 datasets from the region’s five most populous countries, SeaFBen evaluates five key tasks: Knowledge Understanding, Investment Tendency, Credit Rating, Financial Decision-making, and Numerical Reasoning. It pioneers multilingual financial task evaluation, regional localization, and introduces five new datasets. Evaluating 12 LLMs reveals significant performance differences, particularly in numerical reasoning, with ChatGPT and SeaLLMs excelling while PolyLM-13B underperforms. SeaFBen is a vital resource for advancing LLM research and applications in this domain.
 <!-- 作者部分 -->
 <h1 style="float:left">"Main Contributors"</h1>
 <div align="center" style="margin-top: 40px;">
