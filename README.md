@@ -1,5 +1,7 @@
-<div align="center" style="font-size: 50px; font-weight: bold; color: black; ">
-    SeaFBen: Evaluation Benchmark for Southeast Asia
+<div style="width: 100%; text-align: center;">
+   <div align="center" style="font-size: 50px !important; font-weight: bold; color: black;">
+       SeaFBen: Evaluation Benchmark for Southeast Asia
+   </div>
 </div>
 
 <div align="center">
