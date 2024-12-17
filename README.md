@@ -67,12 +67,12 @@
 - [Tha] - [Ind]  - [Vie]  - [May]  - [Fil]
 
 **Papers**
-
+<!--
 - [PIXIU: A Comprehensive Benchmark, Instruction Dataset and Large Language Model for Finance](https://arxiv.org/abs/2306.05443)
 - [The FinBen: An Holistic Financial Benchmark for Large Language Models](https://arxiv.org/abs/2402.12659)
 - [No Language is an Island: Unifying Chinese and English in Financial Large Language Models, Instruction Data, and Benchmarks](https://arxiv.org/abs/2403.06249)
 - [Dólares or Dollars? Unraveling the Bilingual Prowess of Financial LLMs Between Spanish and English](https://arxiv.org/abs/2402.07405)
-
+-->
 **Evaluations**:
 
 - [English Evaluation Datasets](https://huggingface.co/collections/TheFinAI/english-evaluation-dataset-658f515911f68f12ea193194) (More details on FinBen section)
@@ -134,26 +134,18 @@
 - [ACL18 for Stock Movement (flare_sm_acl)](https://huggingface.co/datasets/TheFinAI/flare-sm-acl)
 - [CIKM18 for Stock Movement (flare_sm_cikm)](https://huggingface.co/datasets/TheFinAI/flare-sm-cikm)
 
-## Overview
 
-Welcome to the **PIXIU** project! This project is designed to support the development, fine-tuning, and evaluation of Large Language Models (LLMs) in the financial domain. PIXIU is a significant step towards understanding and harnessing the power of LLMs in the financial domain.
-
-### Structure of the Repository
-
-The repository is organized into several key components, each serving a unique purpose in the financial NLP pipeline:
-
-- **FinBen**: Our Financial Language Understanding and Prediction Evaluation Benchmark. FinBen serves as the evaluation suite for financial LLMs, with a focus on understanding and prediction tasks across various financial contexts.
-- **FIT**: Our Financial Instruction Dataset. FIT is a multi-task and multi-modal instruction dataset specifically tailored for financial tasks. It serves as the training ground for fine-tuning LLMs for these tasks.
-
-- **FinMA**: Our Financial Large Language Model (LLM). FinMA is the core of our project, providing the learning and prediction power for our financial tasks.
 
 ### Key Features
 
-- **Open resources**: PIXIU openly provides the financial LLM, instruction tuning data, and datasets included in the evaluation benchmark to encourage open research and transparency.
-  
-- **Multi-task**: The instruction tuning data and benchmark in PIXIU cover a diverse set of financial tasks, including four financial NLP tasks and one financial prediction task.
-- **Multi-modality**: PIXIU's instruction tuning data and benchmark consist of multi-modality financial data, including time series data from the stock movement prediction task. It covers various types of financial texts, including reports, news articles, tweets, and regulatory filings.
-- **Diversity**: Unlike previous benchmarks focusing mainly on financial NLP tasks, PIXIU's evaluation benchmark includes critical financial prediction tasks aligned with real-world scenarios, making it more challenging.
+
+- Open Resources**: SeaFBen openly provides Southeast Asian financial datasets included in the evaluation benchmark, featuring custom-built numerical reasoning datasets created in collaboration with Southeast Asian experts, to encourage open research and enhance transparency.
+
+- **Multi-task**: The PIXIU benchmark covers a variety of financial tasks, including 5 Southeast Asian languages, 5 Southeast Asian financial tasks, and 20 financial datasets.
+
+- **Multi-modality**: The PIXIU benchmark consists of multi-modal financial data, including time-series data from stock movement prediction tasks. It encompasses various types of financial texts, such as reports, news articles, tweets, and regulatory filings.
+
+- **Diversity**: Unlike previous benchmarks that primarily focus on financial NLP tasks, SeaFBen's evaluation benchmark includes Southeast Asian financial prediction tasks aligned with real-world scenarios, making it more challenging.
 
 ---
 
