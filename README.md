@@ -1,4 +1,4 @@
-<div align="center" style="font-size: 50px; font-weight: bold; color: black; text-transform: uppercase;">
+<div align="center" style="font-size: 50px; font-weight: bold; color: black; ">
     SeaFBen: Evaluation Benchmark for Southeast Asia
 </div>
 
