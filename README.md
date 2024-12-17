@@ -239,7 +239,6 @@ In this section, we provide a detailed performance analysis of FinMA compared to
 
 <span id="26">26.</span> Zhiyu Chen, Shiyang Li, Charese Smiley, Zhiqiang Ma, Sameena Shah, and William Yang Wang. 2022. ConvFinQA: Exploring the Chain of Numerical Reasoning in Conversational Finance Question Answering. In Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing, pages 6279–6292, Abu Dhabi, United Arab Emirates. Association for Computational Linguistics.
 
-
 | **FinTask**  | **Dataset**      | **Metrics**  | **ChatGPT** | **LLaMA2** | **PolyLM** | **SeaLLM-V2** | **LLaMA3** | **PhoGpt** | **Typhoon** | **SeaLLM-V2.5** | **SeaLLM-V3** | **Sailor** | **Qwen2** | **Gemma** |
 |--------------|------------------|--------------|-------------|------------|------------|---------------|------------|------------|-------------|-----------------|----------------|------------|----------|----------|
 | **KU**       | **ThaEx**        | Accuracy     | **0.653**   | 0.171      | 0.000      | 0.301         | 0.200      | 0.041      | 0.197       | 0.388           | 0.371          | 0.178      | 0.404    | 0.181    |
@@ -270,8 +269,8 @@ In this section, we provide a detailed performance analysis of FinMA compared to
 |              |                  | F1           | 0.282       | 0.304      | 0.277      | **0.500**     | 0.480      | 0.384      | 0.493       | 0.500           | 0.478          | 0.484      | 0.500    | 0.422    |
 |              | **FilACL18**     | Accuracy     | 0.444       | 0.503      | 0.440      | 0.476         | 0.451      | 0.448      | 0.446       | 0.499           | 0.504          | 0.444      | 0.511    | **0.529** |
 |              |                  | F1           | 0.304       | 0.504      | 0.269      | 0.477         | 0.360      | 0.325      | 0.355       | 0.500           | 0.504          | 0.319      | 0.508    | **0.523** |
-|              | **MayACL18**     | Accuracy     | 0.439       | 0.496      | 0.439      | 0.446         | 0.471      | 0.519      | **0.523**   | 0.464           | 0.476          | 0.531
-
+|              | **MayACL18**     | Accuracy     | 0.439       | 0.496      | 0.439      | 0.446         | 0.471      | 0.519      | **0.523**   | 0.464           | 0.476          | 0.531      | 0.511    | 0.512    |
+|              |                  | F1           | 0.284       | 0.416      | 0.280      | 0.329         | 0.398      | 0.359      | **0.419**   | 0.402           | 0.370          | 0.405      | 0.406    | 0.385    |
 
 ### Evaluation
 
