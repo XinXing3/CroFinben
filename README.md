@@ -1,17 +1,25 @@
-<p align="center" width="100%">
-SeaFBen:Evaluation Benchmark for Southeast Asia
+<p align="center" style="font-size: 24px; font-weight: bold; color: #2C3E50; text-transform: uppercase;">
+    SeaFBen: Evaluation Benchmark for Southeast Asia
 </p>
-<div>
-<div align="left">
-    <a target='_blank'>Gang Hu</a>
+
+<div align="center">
+    <div style="font-size: 18px; margin-bottom: 10px;">
+        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Gang Hu</a>
+    </div>
+    <div style="font-size: 18px; margin-bottom: 10px;">
+        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Qingqing Wang</a>
+    </div>
+    <div style="font-size: 18px; margin-bottom: 10px;">
+        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Kang Wang</a>
+    </div>   
+    <div style="font-size: 18px; margin-bottom: 10px;">
+        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Ke Qin</a>
+    </div>
+    <div style="font-size: 18px; margin-bottom: 10px;">
+        <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">WangLong Yu</a>
+    </div>
 </div>
-<div><a target='_blank'>Qingqing Wang></a></div>
-<div><a target='_blank'>Kang Wang</a></div>   
-<div><a target='_blank'>Ke Qin</a></div>
-<div><a target='_blank'>WangLong Yu</a></div>
-   
-</div>
-<br />
+
 
 <div align="left">
     <sup>1</sup>The Fin AI&emsp;
