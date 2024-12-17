@@ -14,6 +14,8 @@
 <div align="left" style="margin-top: 40px;">
 
 1.<div style="font-size: 18px; margin-bottom: 20px;">
+         ![专家教授](https://github.com/qqgzi/SeaFBen/blob/master/asset/%E4%B8%93%E5%AE%B6%E6%95%99%E6%8E%88.svg?raw=true)
+
         <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Gang Hu</a><br />
         <span style="font-size: 16px; color: #555;">Cross-lingual Intelligent Information Processing, Yunnan University</span>
    </div>
