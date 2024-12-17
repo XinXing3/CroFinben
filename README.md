@@ -248,8 +248,8 @@ In this section, we provide a detailed performance analysis of FinMA compared to
 
 ##### Locally install
 ```bash
-git clone https://github.com/The-FinAI/PIXIU.git --recursive
-cd PIXIU
+git clone https://github.com/qqgzi/SeaFBen.git --recursive
+cd SeaFBen
 pip install -r requirements.txt
 cd src/financial-evaluation
 pip install -e .[multilingual]
@@ -268,8 +268,8 @@ docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 \
     --env all_proxy=$all_proxy \
     --env HF_HOME=$hf_home \
     -it [--rm] \
-    --name pixiu \
-    -v $pixiu_path:$pixiu_path \
+    --name SeaFBen \
+    -v $SeaFBen_path:$SeaFBen_path \
     -v $hf_home:$hf_home \
     -v $ssh_pub_key:/root/.ssh/authorized_keys \
     -w $workdir \
@@ -281,11 +281,11 @@ Arguments explain:
 - `HF_HOME`: huggingface cache dir
 - `sshd_port`: sshd port of the container, you can run `ssh -i private_key -p $sshd_port root@$ip` to connect to the container, default to 22001
 - `--rm`: remove the container when exit container (ie.`CTRL + D`)
-
+<!--
 #### Automated Task Assessment
 Before evaluation, please download [BART checkpoint](https://drive.google.com/u/0/uc?id=1_7JfF7KOInb7ZrxKHIigTMR4ChVET01m&export=download) to `src/metrics/BARTScore/bart_score.pth`.
 
-For automated evaluation, please follow these instructions:
+ For automated evaluation, please follow these instructions:
 
 1. Huggingface Transformer
 
@@ -299,17 +299,17 @@ python eval.py \
 ```
 
 More details can be found in the [lm_eval](https://github.com/EleutherAI/lm-evaluation-harness) documentation.
-
+-->
 2. Commercial APIs
 
 
-Please note, for tasks such as NER, the automated evaluation is based on a specific pattern. This might fail to extract relevant information in zero-shot settings, resulting in relatively lower performance compared to previous human-annotated results.
+Please note, for tasks such as NA, the automated evaluation is based on a specific pattern. This might fail to extract relevant information in zero-shot settings, resulting in relatively lower performance compared to previous human-annotated results.
 
 ```bash
 export OPENAI_API_SECRET_KEY=YOUR_KEY_HERE
 python eval.py \
     --model gpt-4 \
-    --tasks flare_ner,flare_sm_acl,flare_fpb
+    --tasks SeaFBen_NA
 ```
 
 3. Self-Hosted Evaluation
@@ -330,7 +330,7 @@ python data/*/evaluate.py
 
 ### Create new tasks
 
-Creating a new task for FinBen involves creating a Huggingface dataset and implementing the task in a Python file. This guide walks you through each step of setting up a new task using the FinBen framework.
+Creating a new task for SeaFBen involves creating a Huggingface dataset and implementing the task in a Python file. This guide walks you through each step of setting up a new task using the SeaFBen framework.
 
 #### Creating your dataset in Huggingface
 
@@ -348,7 +348,7 @@ In this format:
 
 - `query`: Combination of your prompt and text
 - `answer`: Your label
-
+<!--
 For **Multi-turn** tasks (such as )
 
 For **Classification** tasks (such as [FPB (FinBen_fpb)](https://huggingface.co/datasets/TheFinAI/flare-fpb)), additional keys should be defined:
@@ -367,17 +367,16 @@ For **Extractive Summarization** tasks (such as [ECTSUM (FinBen_ectsum)](https:/
 - `label`: List of sentence labels
 
 For **abstractive Summarization** and **Question Answering** tasks (such as [EDTSUM (FinBen_edtsum)](https://huggingface.co/datasets/TheFinAI/flare-edtsum)), no additional keys should be defined
-
 #### Implementing the task
 
 Once your dataset is ready, you can start implementing your task. Your task should be defined within a new class in flare.py or any other Python file located within the tasks directory.
 
-To cater to a range of tasks, we offer several specialized base classes, including `Classification`, `SequentialLabeling`, `RelationExtraction`, `ExtractiveSummarization`, `AbstractiveSummarization` and `QA`.
+To cater to a range of tasks, we offer several specialized base classes, including `KU`, `FD`, `CR`, `NR`, `IT` .
 
-For instance, if you are embarking on a classification task, you can directly leverage our `Classification` base class. This class allows for efficient and intuitive task creation. To better demonstrate this, let's delve into an example of crafting a task named FinBen-FPB using the `Classification` base class:
+For instance, if you are embarking on a classification task, you can directly leverage our `IT` base class. This class allows for efficient and intuitive task creation. To better demonstrate this, let's delve into an example of crafting a task named FinBen-FPB using the `Classification` base class:
 
 ```python
-class flareFPB(Classification):
+class Sea(Classification):
     DATASET_PATH = "flare-fpb"
 ```
 
@@ -390,6 +389,7 @@ TASK_REGISTRY = {
 }
 ```
 
+-->
 #### Predefined task metrics
 
 | Task                                     | Metric                                 | Illustration                                                 |
