@@ -3,11 +3,12 @@ SeaFBen:Evaluation Benchmark for Southeast Asia
 </p>
 <div>
 <div align="left">
-    <a target='_blank'>Gang Hu</a>&emsp;
-    <a target='_blank'>Qingqing Wang></a>&emsp;
-    <a target='_blank'>Kang Wang</a>q&emsp;
-    <a target='_blank'>Ke Qin</a>&emsp;
-    <a target='_blank'>WangLong Yu</a>&emsp;
+    <a target='_blank'>Gang Hu</a>
+</div>
+<div><a target='_blank'>Qingqing Wang></a></div>
+<div><a target='_blank'>Kang Wang</a></div>   
+<div><a target='_blank'>Ke Qin</a></div>
+<div><a target='_blank'>WangLong Yu</a></div>
    
 </div>
 <br />
