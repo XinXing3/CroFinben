@@ -9,7 +9,7 @@
 <!-- 作者部分 -->
 
    
-<h1 align="left">Main Contributors</h1>
+<!--<h1 align="left">Main Contributors</h1>
 
 <div align="left" style="margin-top: 40px;">
 
@@ -43,7 +43,7 @@
     <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
     
 </div>
-
+-->
 <!-- 底部图片部分
 <div align="center" style="margin-top: 40px;">
     <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbx3AQWiMhxwOvFb7r1PH-h_i5-b3H9xsGVKnkQwbFlA&s' alt='Yunnan University' height='100px' style="margin-right: 30px;">
