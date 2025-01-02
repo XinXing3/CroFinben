@@ -75,9 +75,8 @@
 -->
 **Evaluations**:
 
-- [English Evaluation Datasets](https://huggingface.co/collections/TheFinAI/english-evaluation-dataset-658f515911f68f12ea193194) (More details on FinBen section)
-- [Spanish Evaluation Datasets](https://huggingface.co/collections/TheFinAI/spanish-evaluation-datasets-65e5855900680b19bc83e03d)
-- [Chinese Evaluation Datasets](https://huggingface.co/collections/TheFinAI/chinese-evaluation-datasets-65e5851af7daaa71c1c59902)
+- [Southeast Asian Financial Evaluation Datasets](https://huggingface.co/collections/TheFinAI/english-evaluation-dataset-658f515911f68f12ea193194)
+
 
 > Sentiment Analysis
 
