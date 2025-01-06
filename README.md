@@ -75,65 +75,42 @@
 -->
 **Evaluations**:
 
-- [Southeast Asian Financial Evaluation Datasets](https://huggingface.co/collections/TheFinAI/english-evaluation-dataset-658f515911f68f12ea193194)
 
 
-> Sentiment Analysis
 
-- [FPB (en_fpb)](https://huggingface.co/datasets/TheFinAI/en-fpb)
-- [FIQASA (flare_fiqasa)](https://huggingface.co/datasets/TheFinAI/en-fpb)
-- [FOMC (flare_fomc)](https://huggingface.co/datasets/TheFinAI/flare-fomc)
-- [SemEval-2017 Task5 (flare_tsa)](https://huggingface.co/datasets/TheFinAI/flare-tsa)
+> Knowledge Understanding (KU):
 
-> Classification
+- [Exam (Tha)](https://huggingface.co/datasets/SeaFinAI/Exam)
+- [URLSum (Ind)](https://huggingface.co/datasets/SeaFinAI/URLSum)
+- [AppRevs (Ind)](https://huggingface.co/datasets/SeaFinAI/AppRevs)
 
-- [Headlines (flare_headlines)](https://huggingface.co/datasets/TheFinAI/flare-headlines)
-- [FinArg ECC Task1 (flare_finarg_ecc_auc)](https://huggingface.co/datasets/TheFinAI/flare-finarg-ecc-auc)
-- [FinArg ECC Task2 (flare_finarg_ecc_arc)](https://huggingface.co/datasets/TheFinAI/flare-finarg-ecc-arc)
-- [CFA (flare_cfa)](https://huggingface.co/datasets/TheFinAI/flare-cfa)
-- [MultiFin EN (flare_multifin_en)](https://huggingface.co/datasets/TheFinAI/flare-multifin-en)
-- [M&A (flare_ma)](https://huggingface.co/datasets/TheFinAI/flare-ma)
-- [MLESG EN (flare_mlesg)](https://huggingface.co/datasets/TheFinAI/flare-mlesg)
+> Investment Tendency(IT):
 
-> Knowledge Extraction
+- [FinSent (Ind)](https://huggingface.co/datasets/SeaFinAI/FinSent)
+- [FilSA (Fil](https://huggingface.co/datasets/SeaFinAI/FilSA)
+- [MayFPB (May)](https://huggingface.co/datasets/SeaFinAI/MayFPBc)
 
-- [NER (flare_ner)](https://huggingface.co/datasets/TheFinAI/flare-ner)
-- [Finer Ord (flare_finer_ord)](https://huggingface.co/datasets/TheFinAI/flare-finer-ord)
-- [FinRED (flare_finred)](https://huggingface.co/datasets/TheFinAI/flare-finred)
-- [FinCausal20 Task1 (flare_causal20_sc)](https://huggingface.co/datasets/TheFinAI/flare-causal20-sc)
-- [FinCausal20 Task2 (flare_cd)](https://huggingface.co/datasets/TheFinAI/flare-cd)
+> Credit Rating(CR):
 
-> Number Understanding
+- [IndCCFraud (Ind)](https://huggingface.co/datasets/SeaFinAI/IndCCFraud)
+- [VieCRACCF (Vie)](https://huggingface.co/datasets/SeaFinAI/VieCRACCF)
+- [FilLenClub (Fil)](https://huggingface.co/datasets/SeaFinAI/FilLenClub)
+- [MayAustralian (May)](https://huggingface.co/datasets/SeaFinAI/MayAustralian)
+> Financial Decision-Making(FD):
 
-- [FinQA (flare_finqa)](https://huggingface.co/datasets/TheFinAI/flare-finqa)
-- [TATQA (flare_tatqa)](https://huggingface.co/datasets/TheFinAI/flare-tatqa)
-- [FNXL (flare_fnxl)](https://huggingface.co/datasets/TheFinAI/flare-fnxl)
-- [FSRL (flare_fsrl)](https://huggingface.co/datasets/TheFinAI/flare-fsrl)
+- [IndCIKM18 (Ind)](https://huggingface.co/datasets/SeaFinAI/IndCIKM18)
+- [VieBigdata(vie)](https://huggingface.co/datasets/SeaFinAI/VieBigdata)
+- [FilACL18 (Fil)](https://huggingface.co/datasets/SeaFinAI/FilACL18)
+- [MayACL18 (May)](https://huggingface.co/datasets/SeaFinAI/MayACL18)- 
+- [ThaStockA (Tha)](https://huggingface.co/datasets/SeaFinAI/ThaStockA)
 
-> Text Summarization
+> Numerical Reasoning(NR):
 
-- [ECTSUM (flare_ectsum)](https://huggingface.co/datasets/TheFinAI/flare-ectsum)
-- [EDTSUM (flare_edtsum)](https://huggingface.co/datasets/TheFinAI/flare-edtsum)
-
-> Credit Scoring
-
-- [German (flare_german)](https://huggingface.co/datasets/TheFinAI/flare-german)
-- [Australian (flare_australian)](https://huggingface.co/datasets/TheFinAI/flare-australian)
-- [Lendingclub (flare_cra_lendingclub)](https://huggingface.co/datasets/daishen/cra-lendingclub)
-- [Credit Card Fraud (flare_cra_ccf)](https://huggingface.co/datasets/daishen/cra-ccf)
-- [ccFraud (flare_cra_ccfraud)](https://huggingface.co/datasets/daishen/cra-ccfraud)
-- [Polish (flare_cra_polish)](https://huggingface.co/datasets/daishen/cra-polish)
-- [Taiwan Economic Journal (flare_cra_taiwan)](https://huggingface.co/datasets/daishen/cra-taiwan)
-- [PortoSeguro (flare_cra_portoseguro)](https://huggingface.co/datasets/daishen/cra-portoseguro)
-- [Travle Insurance (flare_cra_travelinsurance)](https://huggingface.co/datasets/daishen/cra-travelinsurance) 
-
-> Forecasting
-
-- [BigData22 for Stock Movement (flare_sm_bigdata)](https://huggingface.co/datasets/TheFinAI/flare-sm-bigdata)
-- [ACL18 for Stock Movement (flare_sm_acl)](https://huggingface.co/datasets/TheFinAI/flare-sm-acl)
-- [CIKM18 for Stock Movement (flare_sm_cikm)](https://huggingface.co/datasets/TheFinAI/flare-sm-cikm)
-
-
+- [ThaNRen (Tha)](https://huggingface.co/datasets/SeaFinAI/ThaNRen)
+- [IndNRen (Ind)](https://huggingface.co/datasets/SeaFinAI/IndNRen)
+- [VieNRen (Vie)](https://huggingface.co/datasets/SeaFinAI/VieNRen)
+- [FilNRen (Fil)](https://huggingface.co/datasets/SeaFinAI/FilNRen)
+- [MayNRen (May)](https://huggingface.co/datasets/SeaFinAI/MayNRen)
 
 ### Key Features
 
