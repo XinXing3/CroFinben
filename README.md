@@ -66,13 +66,7 @@
 
 - [Tha] - [Ind]  - [Vie]  - [May]  - [Fil]
 
-**Papers**
-<!--
-- [PIXIU: A Comprehensive Benchmark, Instruction Dataset and Large Language Model for Finance](https://arxiv.org/abs/2306.05443)
-- [The FinBen: An Holistic Financial Benchmark for Large Language Models](https://arxiv.org/abs/2402.12659)
-- [No Language is an Island: Unifying Chinese and English in Financial Large Language Models, Instruction Data, and Benchmarks](https://arxiv.org/abs/2403.06249)
-- [Dólares or Dollars? Unraveling the Bilingual Prowess of Financial LLMs Between Spanish and English](https://arxiv.org/abs/2402.07405)
--->
+
 **Evaluations**:
 
 
@@ -117,9 +111,9 @@
 
 - **Open Resources**: SeaFBen openly provides Southeast Asian financial datasets included in the evaluation benchmark, featuring custom-built numerical reasoning datasets created in collaboration with Southeast Asian experts, to encourage open research and enhance transparency.
 
-- **Multi-task**: The PIXIU benchmark covers a variety of financial tasks, including 5 Southeast Asian languages, 5 Southeast Asian financial tasks, and 20 financial datasets.
+- **Multi-task**: The  benchmark covers a variety of financial tasks, including 5 Southeast Asian languages, 5 Southeast Asian financial tasks, and 20 financial datasets.
 
-- **Multi-modality**: The PIXIU benchmark consists of multi-modal financial data, including time-series data from stock movement prediction tasks. It encompasses various types of financial texts, such as reports, news articles, tweets, and regulatory filings.
+- **Multi-modality**: The  benchmark consists of multi-modal financial data, including time-series data from stock movement prediction tasks. It encompasses various types of financial texts, such as reports, news articles, tweets, and regulatory filings.
 
 - **Diversity**: Unlike previous benchmarks that primarily focus on financial NLP tasks, SeaFBen's evaluation benchmark includes Southeast Asian financial prediction tasks aligned with real-world scenarios, making it more challenging.
 
