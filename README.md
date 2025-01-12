@@ -121,8 +121,7 @@
 
 ## SeaFBen Evalution Benchmark result: The evaluation results of 12 representative large models on SeaFBen.
 
-In this section, we provide a detailed performance analysis of FinMA compared to other leading models, including ChatGPT, GPT-4, and BloombergGPT et al. For this analysis, we've chosen a range of tasks and metrics that span various aspects of financial Natural Language Processing and financial prediction. All model results of FinBen can be found on our [leaderboard](https://huggingface.co/spaces/TheFinAI/flare)!
-
+In this section, we provide a detailed performance analysis of FinMA compared to other leading models, including ChatGPT, Qwen2-7B, and et al. For this analysis, we've chosen a range of tasks and metrics that span various aspects of financial Natural Language Processing and financial prediction. A
 ### Tasks
 
 
@@ -241,7 +240,7 @@ dataset-judul-berita-indonesia/master/detik_news_title.csv).
 
 ##### Locally install
 ```bash
-git clone https://github.com/qqgzi/SeaFBen.git --recursive
+<!-- git clone https://github.com/qqgzi/SeaFBen.git --recursive -->
 cd SeaFBen
 pip install -r requirements.txt
 cd src/financial-evaluation
