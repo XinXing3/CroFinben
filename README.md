@@ -240,7 +240,7 @@ dataset-judul-berita-indonesia/master/detik_news_title.csv).
 
 ##### Locally install
 ```bash
-<!-- git clone https://github.com/qqgzi/SeaFBen.git --recursive -->
+
 cd SeaFBen
 pip install -r requirements.txt
 cd src/financial-evaluation
