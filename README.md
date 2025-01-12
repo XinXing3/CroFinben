@@ -300,7 +300,7 @@ Please note, for tasks such as NA, the automated evaluation is based on a specif
 ```bash
 export OPENAI_API_SECRET_KEY=YOUR_KEY_HERE
 python eval.py \
-    --model gpt-4 \
+    --model chatgpt \
     --tasks SeaFBen_NA
 ```
 
