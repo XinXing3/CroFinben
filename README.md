@@ -121,7 +121,7 @@
 
 ## SeaFBen Evalution Benchmark result: The evaluation results of 12 representative large models on SeaFBen.
 
-In this section, we provide a detailed performance analysis of FinMA compared to other leading models, including ChatGPT, Qwen2-7B, and et al. For this analysis, we've chosen a range of tasks and metrics that span various aspects of financial Natural Language Processing and financial prediction. A
+
 ### Tasks
 
 
@@ -250,7 +250,7 @@ pip install -e .[multilingual]
 ```bash
 sudo bash scripts/docker_run.sh
 ```
-Above command starts a docker container, you can modify `docker_run.sh` to fit your environment. We provide pre-built image by running `sudo docker pull tothemoon/pixiu:latest`
+Above command starts a docker container, you can modify `docker_run.sh` to fit your environment. We provide pre-built image by running `sudo docker pull tothemoon/SeaFBen:latest`
 
 ```bash
 docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 \
@@ -265,7 +265,7 @@ docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 \
     -v $hf_home:$hf_home \
     -v $ssh_pub_key:/root/.ssh/authorized_keys \
     -w $workdir \
-    $docker_user/pixiu:$tag \
+    $docker_user/SeaFBen:$tag \
     [--sshd_port 2201 --cmd "echo 'Hello, world!' && /bin/bash"]
 ```
 Arguments explain:
@@ -281,13 +281,13 @@ Before evaluation, please download [BART checkpoint](https://drive.google.com/u/
 
 1. Huggingface Transformer
 
-   To evaluate a model hosted on the HuggingFace Hub (for instance, finma-7b-full), use this command:
+   To evaluate a model hosted on the HuggingFace Hub, use this command:
 
 ```bash
 python eval.py \
     --model "hf-causal-llama" \
-    --model_args "use_accelerate=True,pretrained=TheFinAI/finma-7b-full,tokenizer=TheFinAI/finma-7b-full,use_fast=False" \
-    --tasks "flare_ner,flare_sm_acl,flare_fpb"
+    --model_args "use_accelerate=True,pretrained=PoLylm-13B,tokenizer=PoLylm-13B,use_fast=False" \
+    --tasks "SeaFBen_ThaNA"
 ```
 
 More details can be found in the [lm_eval](https://github.com/EleutherAI/lm-evaluation-harness) documentation.
@@ -343,7 +343,7 @@ In this format:
 <!--
 For **Multi-turn** tasks (such as )
 
-For **Classification** tasks (such as [FPB (FinBen_fpb)](https://huggingface.co/datasets/TheFinAI/flare-fpb)), additional keys should be defined:
+For **Classification** tasks , additional keys should be defined:
 
 - `choices`: Set of labels
 - `gold`: Index of the correct label in choices (Start from 0)
