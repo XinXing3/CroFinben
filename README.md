@@ -249,11 +249,7 @@ pip install -e .[multilingual]
 
 
 
-Arguments explain:
-- `[]` means ignoreable arguments
-- `HF_HOME`: huggingface cache dir
-- `sshd_port`: sshd port of the container, you can run `ssh -i private_key -p $sshd_port root@$ip` to connect to the container, default to 22001
-- `--rm`: remove the container when exit container (ie.`CTRL + D`)
+
 <!--
 #### Automated Task Assessment
 Before evaluation, please download [BART checkpoint](https://drive.google.com/u/0/uc?id=1_7JfF7KOInb7ZrxKHIigTMR4ChVET01m&export=download) to `src/metrics/BARTScore/bart_score.pth`.
@@ -273,7 +269,7 @@ python eval.py \
 
 More details can be found in the [lm_eval](https://github.com/EleutherAI/lm-evaluation-harness) documentation.
 -->
-2. Commercial APIs
+1. Commercial APIs
 
 
 Please note, for tasks such as NA, the automated evaluation is based on a specific pattern. This might fail to extract relevant information in zero-shot settings, resulting in relatively lower performance compared to previous human-annotated results.
@@ -285,7 +281,7 @@ python eval.py \
     --tasks SeaFBen_NA
 ```
 
-3. Self-Hosted Evaluation
+2. Self-Hosted Evaluation
 
 To run inference backend:
 
