@@ -246,11 +246,7 @@ pip install -r requirements.txt
 cd src/financial-evaluation
 pip install -e .[multilingual]
 ```
-##### Docker image
-```bash
-sudo bash scripts/docker_run.sh
-```
-Above command starts a docker container, you can modify `docker_run.sh` to fit your environment. We provide pre-built image by running `sudo docker pull tothemoon/SeaFBen:latest`
+
 
 ```bash
 docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 \
