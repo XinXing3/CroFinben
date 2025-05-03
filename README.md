@@ -1,11 +1,11 @@
 <!-- 标题部分 -->
 <div style="width: 100%; height: 100px; text-align: center; background-color: #f4f4f4; padding: 20px 0;">
    <h1 style="font-size: 50px; font-weight: bold; color: black; line-height: 100px;">
-       SeaFBen: Evaluation Benchmark for Southeast Asia
+       CroFinben: Multilingual Benchmarking of LLMs for Cross Mainstream and Low-resource Finance
    </h1>
 </div>
-   Welcome to here, let's get to know SeaFBen together. </br>
-   we introduce SeaFBen, the first open-source benchmark for Southeast Asian multilingual financial tasks. Covering 22,068 samples across 20 datasets from the region’s five most populous countries, SeaFBen evaluates five key tasks: Knowledge Understanding(KU), Investment Tendency(IT), Credit Rating(CR), Financial Decision-making(FD), and Numerical Reasoning(NR). It pioneers multilingual financial task evaluation, regional localization, and introduces five new datasets. Evaluating 12 LLMs reveals significant performance differences.
+   Welcome to here, let's get to know CroFinben together. </br>
+   we introduce CroFinBen, the first multilingual benchmark specifically designed to bridge the language-resource gap between mainstream and low-resource finance. It includes 4 key financial tasks (FinSA, FinSP, FinTS, and FinTC) in both high-resource languages (English and Chinese) and low-resource SEA languages (Indonesian, Malaysian, Thai, Filipino, and Vietnamese), comprising 50k samples from 16 datasets to ensure a comprehensive and balanced evaluation. It enhances the fairness and robustness of FinLLMs, providing strong support for improving performance  in global financial scenarios.
 <!-- 作者部分 -->
 
    
@@ -24,7 +24,7 @@
 <div style="font-size: 18px; margin-bottom: 20px;margin-top:20px">
    <img src="https://github.com/qqgzi/SeaFBen/blob/master/asset/%E5%AD%A6%E7%94%9F.svg?raw=true" 
          alt="学生" style="float: left; width: 25px; height: 25px; margin-right: 10px;">
-   <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Qingqing Wang</a><br />
+   <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Siqi Lv</a><br />
    <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
 </div>
 
@@ -64,89 +64,75 @@
 
 **Languages**
 
-- [Tha] - [Ind]  - [Vie]  - [May]  - [Fil]
-
+- high-resource languages: - [EN] - [ZH]
+- low-rescoure languages: -[Tha] - [Ind]  - [Vie]  - [May]  - [Fil]
 
 **Evaluations**:
 
 
+FinSA, FinSP, FinTS, and FinTC
 
+> Financial Sentiment Analysis (FinSA):
+- [FE (ZH)]
+- [FPB (EN)]
+- [FinSent (Ind)]
+- [MayFPB (May)]
 
-> Knowledge Understanding (KU):
+> Financial Stock Prediction (FinSP):
+- [StockA (ZH)]
+- [ACL18 (EN)]
+- [IndCIKM18 (Ind)]
+- [FilACL18 (Fil)]
 
-- [Exam (Tha)](https://huggingface.co/datasets/SeaFinAI/Exam)
+> Financial Text Classification (FinTC):
+- [NA (ZH)]
+- [EDTSUM (EN)]
 - [URLSum (Ind)](https://huggingface.co/datasets/SeaFinAI/URLSum)
-- [AppRevs (Ind)](https://huggingface.co/datasets/SeaFinAI/AppRevs)
+- [ThaNA (Tha)]
 
-> Investment Tendency(IT):
+> Financial Text Classification (FinTC):
 
-- [FinSent (Ind)](https://huggingface.co/datasets/SeaFinAI/FinSent)
-- [FilSA (Fil](https://huggingface.co/datasets/SeaFinAI/FilSA)
-- [MayFPB (May)](https://huggingface.co/datasets/SeaFinAI/MayFPBc)
-
-> Credit Rating(CR):
-
-- [IndCCFraud (Ind)](https://huggingface.co/datasets/SeaFinAI/IndCCFraud)
-- [VieCRACCF (Vie)](https://huggingface.co/datasets/SeaFinAI/VieCRACCF)
-- [FilLenClub (Fil)](https://huggingface.co/datasets/SeaFinAI/FilLenClub)
-- [MayAustralian (May)](https://huggingface.co/datasets/SeaFinAI/MayAustralian)
-> Financial Decision-Making(FD):
-
-- [IndCIKM18 (Ind)](https://huggingface.co/datasets/SeaFinAI/IndCIKM18)
-- [VieBigdata(vie)](https://huggingface.co/datasets/SeaFinAI/VieBigdata)
-- [FilACL18 (Fil)](https://huggingface.co/datasets/SeaFinAI/FilACL18)
-- [MayACL18 (May)](https://huggingface.co/datasets/SeaFinAI/MayACL18)- 
-- [ThaStockA (Tha)](https://huggingface.co/datasets/SeaFinAI/ThaStockA)
-
-> Numerical Reasoning(NR):
-
-- [ThaNRen (Tha)](https://huggingface.co/datasets/SeaFinAI/ThaNRen)
-- [IndNRen (Ind)](https://huggingface.co/datasets/SeaFinAI/IndNRen)
-- [VieNRen (Vie)](https://huggingface.co/datasets/SeaFinAI/VieNRen)
-- [FilNRen (Fil)](https://huggingface.co/datasets/SeaFinAI/FilNRen)
-- [MayNRen (May)](https://huggingface.co/datasets/SeaFinAI/MayNRen)
-
-### Key Features
+- [NL (ZH)]
+- [Headlines (EN)]
+- [AppRews (Ind)](https://huggingface.co/datasets/SeaFinAI/AppRevs)
+- [VieNL (Vie)]
 
 
-- **Open Resources**: SeaFBen openly provides Southeast Asian financial datasets included in the evaluation benchmark, featuring custom-built numerical reasoning datasets created in collaboration with Southeast Asian experts, to encourage open research and enhance transparency.
+### Key Breakthroughs
 
-- **Multi-task**: The  benchmark covers a variety of financial tasks, including 5 Southeast Asian languages, 5 Southeast Asian financial tasks, and 20 financial datasets.
 
-- **Multi-modality**: The  benchmark consists of multi-modal financial data, including time-series data from stock movement prediction tasks. It encompasses various types of financial texts, such as reports, news articles, tweets, and regulatory filings.
-
-- **Diversity**: Unlike previous benchmarks that primarily focus on financial NLP tasks, SeaFBen's evaluation benchmark includes Southeast Asian financial prediction tasks aligned with real-world scenarios, making it more challenging.
+- **Breaking high- and low-resource cross-lingual barrier**: CroFinBen is the first benchmark supporting cross-mainstream and low-resource finance, particularly SEA languages (Ind, Tha, Fil, Vie, and May), filling the gap in low-resource financial tasks.
+- **Highly localized annotation for low-resource dataset**: Unlike other benchmarks that rely on direct translations, CroFinBen works with SEA domain experts to refine financial terms, removing finance- and culture-specific elements to better meet local needs. 
+- **Fairness in high- and low-resource task consistency**: Ensures fair evaluation via consistent NLP main tasks across both high- and low-resource languages, eliminating biases that arise from differing task complexities in existing methods.
+- **Comprehensive evaluation of multi-language tasks**: Conducts an in-depth evaluation of 23 representative general, SEA LLMs and FinLLMs, revealing their strengths and limitations in adapting to both high- and low-resource financial environments.
 
 ---
 
-## SeaFBen Evalution Benchmark result: The evaluation results of 12 representative large models on SeaFBen.
+## CroFinben Evalution Benchmark result: The evaluation results of 23 representative large models on CroFinben.
 
 
 ### Tasks
 
 
-| Task | Language | Dataset         | Task                     | Test | Evaluation          | License      | Paper      |
-|------|----------|-----------------|--------------------------|------|---------------------|--------------|------------|
-| KU   | Tha      | Exam           | financial exam           | 631  | Accuracy, Macro F1  | Apache-2.0   |[[3]](#3)  |
-|      | Ind      | AppRevs   | rating prediction        | 1,999| Accuracy, Macro F1  | CC BY-NC 4.0 | [[4]](#4)  |
-|      | Ind      | URLSum       | url summarization        | 2,834| ROUGE, BERTScore    | Public       | [[5]](#5)  |
-| IT   | Ind      |FinSent      | sentiment analysis       | 2,000| F1, Accuracy        | Apache-2.0   | [[6]](#6)  |
-|      | Fil      | FilSA      | sentiment analysis       | 233  | F1, Accuracy        | MIT License  | [[2]](#2)  |
-|      | May      | MayFPB          | sentiment analysis       | 970  | F1, Accuracy        | MIT License  | [[1]](#1)  |
-| CR   | Ind      | IndCCFraud      | fraud detection          | 2,098| F1, MCC             | Public       |[[10]](#10)  |
-|      | Vie      | VieCRACCF       | fraud detection          | 2,279| F1, MCC             | (DbCL) v1.0  | [[7]](#7)  |
-|      | Fil      | FilLenClub  | credit scoring           | 2,691| F1, MCC             | CC0 1.0      | [[10]](#10)  |
-|      | May      | MayAustralian   | credit scoring           | 133  | F1, MCC             | CC BY 4.0    | [[9]](#9)|
-| FD   | Ind      | IndCikm         | stock movement prediction| 1,139| F1, Accuracy        | Public       | [[13]](#13) |
-|      | Vie      | VieBigdata      | stock movement prediction| 1,139| F1, Accuracy        | Public       |[[11]](#11) |
-|      | Fil      | FilACL18        | stock movement prediction| 1,139| F1, Accuracy        | MIT License  |  [[12]](#12))|
-|      | May      | MayACL18        | stock movement prediction| 1,139| F1, Accuracy        | MIT License  |  [[12]](#12)|
-|      | Tha      | ThaStockA       | stock movement prediction| 1,139| F1, Accuracy        | Public       |[[8]](#8) |
-| NR   | Tha      | ThaNRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       | |
-|      | Ind      | IndNRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       | |
-|      | May      | MayNRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       ||
-|      | Fil      | FilNRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       | |
-|      | Vie      | VieNRen          | quantitative reasoning   | 101  | EM Accuracy         | Public       ||
+| FinTask | Language | Dataset   | Specific task           | Evaluation | Evaluation                                       | Source                    | types          | Textual Hierarchy | License      | NLP Task             |
+|---------|----------|-----------|-------------------------|------------|--------------------------------------------------|---------------------------|----------------|-------------------|--------------|----------------------|
+| FSA     | ZH       | FE        | sentiment analysis      | 2020       | F1, Accuracy, Macro F1                           | social texts              | raw collection | Sentence          | Public       | Classification (CLS) |
+|         | EN       | FPB       | sentiment analysis      | 970        | F1, Accuracy, Macro F1                           | economic news             | raw collection | Sentence          | CC BY-SA 3.0 |                      |
+|         | Ind      | FinSent   | sentiment analysis      | 2000       | F1, Accuracy, Macro F1                           | News Headlines            | raw collection | Sentence          | Apache-2.0   |                      |
+|         | May      | MayFPB    | sentiment analysis      | 970        | F1, Accuracy, Macro F1                           | Economic News             | expert review  | Paragraph         | MIT License  |                      |
+| SP      | ZH       | StockA    | stock prediction        | 1477       | F1, Accuracy, Macro F1                           | news,historical prices    | raw collection | Paragraph         | Public       | Reasoning (REA)      |
+|         | EN       | ACL18     | stock prediction        | 3720       | F1, Accuracy, Macro F1                           | tweets, historical prices | raw collection | Paragraph         | MIT License  |                      |
+|         | Ind      | IndCIKM18 | stock prediction        | 1139       | F1, Accuracy, Macro F1                           | tweets Stock Prices       | expert review  | Paragraph         | Public       |                      |
+|         | Fil      | FilACL18  | stock prediction        | 2000       | F1, Accuracy, Macro F1                           | Tweets, Stock prices      | expert review  | Paragraph         | MIT License  |                      |
+| FTS     | ZH       | NA        | text summarization      | 3600       | Rouge-1, Rouge-2, Rouge-L,  BERTScore, BARTScore | news, announcements       | raw collection | Paragraph         | Public       | Generation (GEN)     |
+|         | EN       | EDTSUM    | text summarization      | 2000       | Rouge-1, Rouge-2, Rouge-L,  BERTScore, BARTScore | news articles             | raw collection | Paragraph         | Public       |                      |
+|         | Ind      | URLSum    | url summarization       | 2834       | Rouge-1, Rouge-2, Rouge-L,  BERTScore, BARTScore | Indonesian News URLs      | raw collection | Paragraph         | Public       |                      |
+|         | Tha      | ThaNA     | text summarization      | 2000       | Rouge-1, Rouge-2, Rouge-L,  BERTScore, BARTScore | news, announcements       | expert review  | Paragraph         | Public       |                      |
+| FTC     | ZH       | NL        | news classification     | 884        | F1, Accuracy, Macro F1                           | news articles             | raw collection | Paragraph         | Public       | Classification (CLS) |
+|         | EN       | Headlines | headline classification | 20547      | Avg F1                                           | news headlines            | raw collection | Sentence          | CC BY-SA 3.0 |                      |
+|         | Ind      | AppRevs   | financial review        | 1999       | F1, Accuracy, Macro F1                           | Mandiri App Reviews       | raw collection | Sentence          | CC BY-NC 4.0 |                      |
+|         | Vie      | VieNL     | news classification     | 2000       | F1, Accuracy, Macro F1                           | news articles             | expert review  | Paragraph         | Public       |                      |
+|         |          |           |                         |            |                                                  |                           |                |                   |              |                      |
 
 
 
@@ -155,83 +141,34 @@
 
 
 
+| Model        |Finanical Task |        |        |        | NLP Task |        |        | language |        |        | overall |
+|--------------|----------------|--------|--------|--------|----------|--------|--------|----------|--------|--------|---------|
+|              | FinSA            | FinSP     | FinTS    | FinTC      | CLS      | GEN    | REA    | EN       | ZH     | SEA    |         |
+| LLaMa2       | 0.262          | 0.333  | 0.219  | 0.322  | 0.292    | 0.219  | 0.333  | 0.357    | 0.195  | 0.299  | 0.284   |
+| LLaMa2-Chat  | 0.356          | 0.365  | 0.236  | 0.314  | 0.335    | 0.236  | 0.365  | 0.413    | 0.269  | 0.271  | 0.318   |
+| Llama3       | 0.276          | 0.298  | 0.237  | 0.314  | 0.295    | 0.237  | 0.298  | 0.410    | 0.144  | 0.290  | 0.281   |
+| Gemma        | 0.328          | 0.332  | 0.248  | 0.377  | 0.352    | 0.248  | 0.332  | 0.432    | 0.224  | 0.308  | 0.321   |
+| BLOOM        | 0.284          | 0.324  | 0.162  | 0.335  | 0.310    | 0.162  | 0.324  | 0.376    | 0.309  | 0.144  | 0.276   |
+| ChatGPT(3.5) | 0.625          | 0.400  | 0.245  | 0.586  | 0.605    | 0.245  | 0.400  | 0.538    | 0.391  | 0.463  | 0.464   |
+| Qwen         | 0.485          | 0.370  | 0.193  | 0.359  | 0.422    | 0.193  | 0.370  | 0.479    | 0.274  | 0.301  | 0.352   |
+| Qwen2        | 0.532          | 0.431  | 0.332  | 0.318  | 0.425    | 0.332  | 0.431  | 0.409    | 0.349  | 0.452  | 0.403   |
+| Baichuan     | 0.248          | 0.297  | 0.145  | 0.274  | 0.261    | 0.145  | 0.297  | 0.355    | 0.177  | 0.191  | 0.241   |
+| Baichuan2    | 0.050          | 0.270  | 0.144  | 0.219  | 0.134    | 0.144  | 0.270  | 0.275    | 0.033  | 0.204  | 0.171   |
+| ChatGLM2     | 0.000          | 0.168  | 0.116  | 0.201  | 0.101    | 0.116  | 0.168  | 0.252    | 0.032  | 0.081  | 0.121   |
+| ChatGLM3     | 0.482          | 0.372  | 0.269  | 0.397  | 0.440    | 0.269  | 0.372  | 0.537    | 0.376  | 0.227  | 0.380   |
+| DeepSeek     | 0.333          | 0.303  | 0.245  | 0.348  | 0.340    | 0.245  | 0.303  | 0.420    | 0.226  | 0.275  | 0.307   |
+| Internlm     | 0.304          | 0.313  | 0.218  | 0.324  | 0.314    | 0.218  | 0.313  | 0.393    | 0.274  | 0.202  | 0.290   |
+| SeaLLM-v2    | 0.460          | 0.429  | 0.333  | 0.446  | 0.453    | 0.333  | 0.429  | 0.443    | 0.366  | 0.442  | 0.417   |
+| SeaLLM-v2.5  | 0.538          | 0.422  | 0.339  | 0.440  | 0.489    | 0.339  | 0.422  | 0.447    | 0.396  | 0.461  | 0.435   |
+| SeaLLM-v3    | 0.552          | 0.426  | 0.326  | 0.343  | 0.447    | 0.326  | 0.426  | 0.408    | 0.369  | 0.458  | 0.412   |
+| Polylm       | 0.000          | 0.236  | 0.038  | 0.200  | 0.100    | 0.038  | 0.236  | 0.255    | 0.012  | 0.088  | 0.118   |
+| Typhoon      | 0.335          | 0.382  | 0.202  | 0.309  | 0.322    | 0.202  | 0.382  | 0.396    | 0.251  | 0.274  | 0.307   |
+| PhoGPT       | 0.082          | 0.258  | 0.206  | 0.265  | 0.174    | 0.206  | 0.258  | 0.296    | 0.135  | 0.178  | 0.203   |
+| FinMA        | 0.467          | 0.267  | 0.211  | 0.279  | 0.373    | 0.211  | 0.267  | 0.406    | 0.227  | 0.284  | 0.306   |
+| CFGPT        | 0.202          | 0.254  | 0.152  | 0.236  | 0.219    | 0.152  | 0.254  | 0.338    | 0.152  | 0.143  | 0.211   |
+| DISC-FinLLM  | 0.559          | 0.409  | 0.260  | 0.308  | 0.433    | 0.260  | 0.409  | 0.504    | 0.310  | 0.338  | 0.384   |
+|              |                |        |        |        |          |        |        |          |        |        |         |
 
-<span id="1">1.</span> Pekka Malo, Ankur Sinha, Pekka Korhonen, Jyrki Wallenius, and Pyry Takala. 2014. Good debt or bad debt: Detecting semantic orientations in economic texts. Journal of the Association for Information Science and Technology 65, 4 (2014), 782–796.
-
-<span id="2">2.</span> Macedo Maia, Siegfried Handschuh, André Freitas, Brian Davis, Ross McDermott, Manel Zarrouk, and Alexandra Balahur. 2018. Www’18 open challenge: financial opinion mining and question answering. In Companion proceedings of the the web conference 2018. 1941–1942.
-
-<span id="3">3.</span> S. E. of Thailand, “General investment advisor course,” https:522
-//www.set.or.th, accessed on November 7, 2024
-
-<span id="4">4.</span> G. Ahmadijaya, “Livin’ by mandiri app reviews,” https://www.528
-kaggle.com/datasets/itanium/livin-by-mandiri-app-reviews,529
-2023, accessed on Oct. 22, 2023
-
-<span id="5">5.</span> [Ankur Sinha and Tanmay Khandait. 2021. Impact of news on the commodity market: Dataset and results. In Advances in Information and Communication: Proceedings of the 2021 Future of Information and Communication Conference (FICC), Volume 2. Springer, 589–601](https://raw.githubusercontent.com/ibamibrahim/
-dataset-judul-berita-indonesia/master/detik_news_title.csv).
-
-<span id="6">6.</span> N. P. I. Maharani, A. Purwarianti et al., “Domain-specific language model post-training for indonesian financial nlp,” in 2023 International Conference on Electrical Engineering and Informatics (ICEEI). IEEE, 2023, pp. 1–6.
-
-<span id="7">7.</span> D. Feng, Y. Dai et al., “Empowering many, biasing a few: Generalist credit scoring through large language models,” ArXiv, vol. abs/2310.00566, 2023, n. pag. [Online]. Available:https://arxiv.org/abs/2310.00566.
-
-<span id="8">8.</span>J. Zou, H. Cao et al., “Astock: A new dataset and automated stock trading based on stock-specific news analyzing model,” arXiv preprint arXiv:2206.06606, 2022.
-
-
-
-
-
-
-
-<span id="21">9.</span> Quinlan,Ross. Statlog (Australian Credit Approval). UCI Machine Learning Repository. https://doi.org/10.24432/C59012.
-
-<span id="22">10.</span> Duanyu Feng, Yongfu Dai, Jimin Huang, Yifang Zhang, Qianqian Xie, Weiguang Han, Alejandro Lopez-Lira, Hao Wang. 2023. Empowering Many, Biasing a Few: Generalist Credit Scoring through Large Language Models. *ArXiv* abs/2310.00566 (2023): n. pag.
-
-<span id="23">11.</span> Yejun Soun, Jaemin Yoo, Minyong Cho, Jihyeong Jeon, and U Kang. 2022. Accurate Stock Movement Prediction with Self-supervised Learning from Sparse Noisy Tweets. In 2022 IEEE International Conference on Big Data (Big Data). IEEE, 1691–1700.
-
-<span id="24">12.</span> Yumo Xu and Shay B Cohen. 2018. Stock movement prediction from tweets and historical prices. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 1970–1979.
-
-<span id="25">13.</span> Huizhe Wu, Wei Zhang, Weiwei Shen, and Jun Wang. 2018. Hybrid deep sequential modeling for social text-driven stock prediction. In Proceedings of the 27th ACM international conference on information and knowledge management. 1627–1630.
-
-
-| **FinTask** | **Dataset** | **Metrics** | **ChatGPT** | **LLaMA2** | **PolyLM** | **SeaLLM-V2** | **LLaMA3** | **PhoGpt** | **Typhoon** | **SeaLLM-V2.5** | **SeaLLM-V3** | **Sailor** | **Qwen2** | **Gemma** |
-|-------------|-------------|-------------|-------------|------------|------------|---------------|------------|------------|-------------|-----------------|---------------|------------|----------|----------|
-| **KU**      | **Exam**   | Accuracy    | **0.653**   | 0.171      | 0.000      | 0.301         | 0.200      | 0.041      | 0.197       | 0.388           | 0.371         | 0.178      | 0.404    | 0.181    |
-|             |             | Macro F1    | **0.648**   | 0.091      | 0.000      | 0.282         | 0.127      | 0.057      | 0.132       | 0.381           | 0.376         | 0.100      | 0.408    | 0.098    |
-|             | **AppRevs** | Accuracy    | **0.495**   | 0.028      | 0.000      | 0.354         | 0.020      | 0.008      | 0.022       | 0.380           | 0.152         | 0.036      | 0.141    | 0.047    |
-|             |             | Macro F1    | **0.285**   | 0.045      | 0.000      | 0.239         | 0.039      | 0.026      | 0.047       | 0.222           | 0.127         | 0.040      | 0.119    | 0.041    |
-|             | **URLSum** | Rouge1      | 0.332       | 0.281      | 0.000      | 0.631         | 0.392      | 0.189      | 0.177       | **0.752**       | 0.689         | 0.185      | 0.702    | 0.473    |
-|             |             | Rouge2      | 0.212       | 0.251      | 0.000      | 0.465         | 0.354      | 0.168      | 0.149       | **0.586**       | 0.526         | 0.157      | 0.540    | 0.413    |
-|             |             | RougeL      | 0.322       | 0.280      | 0.000      | 0.592         | 0.384      | 0.189      | 0.177       | **0.695**       | 0.637         | 0.181      | 0.648    | 0.461    |
-|             |             | BERTScore   | 0.718       | 0.583      | 0.000      | 0.767         | 0.636      | 0.475      | 0.568       | **0.830**       | 0.785         | 0.582      | 0.792    | 0.693    |
-| **IT**      | **FinSent** | Accuracy    | **0.782**   | 0.445      | 0.000      | 0.378         | 0.412      | 0.061      | 0.506       | 0.747           | 0.599         | 0.324      | 0.633    | 0.181    |
-|             |             | F1          | **0.766**   | 0.400      | 0.000      | 0.356         | 0.406      | 0.056      | 0.389       | 0.727           | 0.612         | 0.329      | 0.639    | 0.166    |
-|             | **FilSA** | Accuracy    | 0.318       | 0.266      | 0.000      | 0.657         | 0.197      | 0.172      | 0.373       | **0.712**       | 0.288         | 0.043      | 0.167    | 0.159    |
-|             |             | F1          | 0.396       | 0.260      | 0.000      | 0.654         | 0.122      | 0.177      | 0.373       | **0.723**       | 0.327         | 0.077      | 0.208    | 0.168    |
-|             | **MayFPB**    | Accuracy    | 0.818       | 0.243      | 0.000      | 0.658         | 0.251      | 0.014      | 0.283       | 0.470           | **0.881**     | 0.207      | 0.750    | 0.235    |
-|             |             | F1          | 0.835       | 0.151      | 0.000      | 0.674         | 0.212      | 0.025      | 0.126       | 0.475           | **0.879**     | 0.183      | 0.774    | 0.216    |
-| **CR**      | **IndCCFraud** | F1          | 0.334       | 0.667      | 0.000      | 0.816         | 0.572      | **0.887**  | 0.836       | 0.710           | 0.018         | 0.886      | 0.007    | 0.844    |
-|             |             | MCC         | -0.025      | 0.081      | 0.000      | 0.126         | 0.053      | **0.277**  | 0.136       | 0.083           | 0.024         | 0.275      | 0.018    | 0.127    |
-|             | **FilLenClub** | F1       | 0.119       | 0.035      | 0.000      | 0.182         | 0.087      | 0.005      | 0.018       | 0.073           | **0.303**     | 0.016      | 0.278    | 0.054    |
-|             |             | MCC         | 0.060       | -0.027     | 0.000      | 0.056         | 0.004      | -0.004     | 0.009       | 0.051           | **0.022**     | 0.013      | 0.013    | 0.000    |
-|             | **VieCRACCF**  | F1          | 0.013       | 0.673      | 0.000      | **0.954**     | 0.861      | 0.617      | 0.362       | 0.144           | 0.248         | 0.942      | 0.569    | 0.095    |
-|             |             | MCC         | 0.003       | 0.013      | 0.000      | **-0.011**    | -0.021     | 0.002      | -0.036      | 0.009           | 0.015         | -0.013     | -0.020   | 0.008    |
-|             | **MayAustralian** | F1        | 0.265       | 0.343      | 0.265      | 0.265         | 0.281      | 0.265      | 0.265       | **0.440**       | 0.271         | 0.265      | 0.362    | 0.376    |
-|             |             | MCC         | 0.000       | 0.174      | 0.000      | 0.000         | 0.077      | 0.000      | -0.010      | **-0.112**      | 0.000         | 0.116      | -0.035   | 0.000    |
-| **FD**      | **IndCIKM18**   | Accuracy    | 0.431       | 0.545      | 0.418      | **0.558**     | 0.529      | 0.436      | 0.481       | 0.485           | 0.519         | 0.500      | 0.546    | 0.465    |
-|             |             | F1          | 0.322       | 0.483      | 0.246      | **0.538**     | 0.517      | 0.316      | 0.485       | 0.485           | 0.507         | 0.492      | 0.536    | 0.459    |
-|             | **VieBigdata**| Accuracy    | 0.448       | 0.451      | 0.448      | **0.537**     | 0.482      | 0.467      | 0.504       | 0.505           | 0.502         | 0.505      | 0.474    | 0.474    |
-|             |             | F1          | 0.282       | 0.304      | 0.277      | **0.500**     | 0.480      | 0.384      | 0.493       | 0.500           | 0.478         | 0.484      | 0.500    | 0.422    |
-|             | **FilACL18**  | Accuracy    | 0.444       | 0.503      | 0.440      | 0.476         | 0.451      | 0.448      | 0.446       | 0.499           | 0.504         | 0.444      | 0.511    | **0.529** |
-|             |             | F1          | 0.304       | 0.504      | 0.269      | 0.477         | 0.360      | 0.325      | 0.355       | 0.500           | 0.504         | 0.319      | 0.508    | **0.523** |
-|             | **MayACL18**  | Accuracy    | 0.439       | 0.496      | 0.439      | 0.446         | 0.471      | 0.519      | **0.523**   | 0.464           | 0.476         | 0.531      | 0.461    | 0.464    |
-|             |             | F1          | 0.274       | 0.498      | 0.269      | 0.305         | 0.417      | 0.501      | **0.524**   | 0.389           | 0.452         | 0.396      | 0.532    | 0.384    |
-|             | **ThaStockA** | Accuracy    | 0.328       | 0.342      | 0.342      | **0.346**     | 0.342      | 0.342      | 0.342       | 0.327           | 0.328         | 0.328      | 0.342    | 0.342    |
-|             |             | F1          | 0.162       | 0.174      | 0.174      | **0.184**     | 0.174      | 0.174      | 0.174       | 0.163           | 0.162         | 0.162      | 0.163    | 0.175    |
-| **NR**      | **ThaNRen**   | Em Accuracy | **0.347**   | 0.000      | 0.000      | 0.139         | 0.000      | 0.000      | 0.000       | 0.000           | 0.000         | 0.000      | 0.000    | 0.000    |
-|         | **IndNRen**      | **Em Accuracy** | **0.327** | 0.000     | 0.000  | 0.109       | 0.000   | 0.000   | 0.000  | 0.218  | 0.149   | 0.000   | 0.079   | 0.139   |
-|         | **MayNRen**      | **Em Accuracy** | **0.406** | 0.000     | 0.000  | 0.218       | 0.000   | 0.000   | 0.000  | 0.198  | 0.000   | 0.000   | 0.069   | 0.248   |
-|         | **FilNRen**      | **Em Accuracy** | **0.356** | 0.000     | 0.000  | 0.139       | 0.000   | 0.000   | 0.000  | 0.327  | 0.030   | 0.000   | 0.168   | 0.168   |
-|         | **VieNRen**      | **Em Accuracy** | **0.356** | 0.000     | 0.000  | 0.079       | 0.000   | 0.000   | 0.000  | 0.317  | 0.109   | 0.000   | 0.089   | 0.020   |
 
 
 ### Evaluation
@@ -264,7 +201,7 @@ Before evaluation, please download [BART checkpoint](https://drive.google.com/u/
 python eval.py \
     --model "hf-causal-llama" \
     --model_args "use_accelerate=True,pretrained=PoLylm-13B,tokenizer=PoLylm-13B,use_fast=False" \
-    --tasks "SeaFBen_ThaNA"
+    --tasks "CroFinben_NL"
 ```
 
 More details can be found in the [lm_eval](https://github.com/EleutherAI/lm-evaluation-harness) documentation.
@@ -278,7 +215,7 @@ Please note, for tasks such as NA, the automated evaluation is based on a specif
 export OPENAI_API_SECRET_KEY=YOUR_KEY_HERE
 python eval.py \
     --model chatgpt \
-    --tasks SeaFBen_NA
+    --tasks CroFinben_NA
 ```
 
 2. Self-Hosted Evaluation
@@ -299,7 +236,7 @@ python data/*/evaluate.py
 
 ### Create new tasks
 
-Creating a new task for SeaFBen involves creating a Huggingface dataset and implementing the task in a Python file. This guide walks you through each step of setting up a new task using the SeaFBen framework.
+Creating a new task for CroFinben involves creating a Huggingface dataset and implementing the task in a Python file. This guide walks you through each step of setting up a new task using the CroFinben framework.
 
 #### Creating your dataset in Huggingface
 
@@ -325,24 +262,16 @@ For **Classification** tasks , additional keys should be defined:
 - `choices`: Set of labels
 - `gold`: Index of the correct label in choices (Start from 0)
 
-For **Sequential Labeling** tasks (such as [Finer Ord (FinBen_finer_ord)](https://huggingface.co/datasets/TheFinAI/flare-finer-ord)), additional keys should be defined:
 
-- `label`: List of token labels
 
-- `token`: List of tokens
-
-For **Extractive Summarization** tasks (such as [ECTSUM (FinBen_ectsum)](https://huggingface.co/datasets/TheFinAI/flare-ectsum)), additional keys should be defined:
-
-- `label`: List of sentence labels
-
-For **abstractive Summarization** and **Question Answering** tasks (such as [EDTSUM (FinBen_edtsum)](https://huggingface.co/datasets/TheFinAI/flare-edtsum)), no additional keys should be defined
+For **abstractive Summarization** tasks (such as [EDTSUM (FinBen_edtsum)](https://huggingface.co/datasets/TheFinAI/flare-edtsum)), no additional keys should be defined
 #### Implementing the task
 
 Once your dataset is ready, you can start implementing your task. Your task should be defined within a new class in flare.py or any other Python file located within the tasks directory.
 
-To cater to a range of tasks, we offer several specialized base classes, including `KU`, `FD`, `CR`, `NR`, `IT` .
+To cater to a range of tasks, we offer several specialized base classes.
 
-For instance, if you are embarking on a classification task, you can directly leverage our `IT` base class. This class allows for efficient and intuitive task creation. To better demonstrate this, let's delve into an example of crafting a task named FinBen-FPB using the `Classification` base class:
+For instance, if you are embarking on a classification task, you can directly leverage our `IT` base class. This class allows for efficient and intuitive task creation. To better demonstrate this, let's delve into an example of crafting a task named FPB using the `Classification` base class:
 
 ```python
 class Sea(Classification):
@@ -365,16 +294,11 @@ TASK_REGISTRY = {
 | ---------------------------------------- | -------------------------------------- | ------------------------------------------------------------ |
 | Classification                           | Accuracy                               | This metric represents the ratio of correctly predicted observations to total observations. It is calculated as (True Positives + True Negatives) / Total Observations. |
 | Classification                           | F1 Score                               | The F1 Score represents the harmonic mean of precision and recall, thereby creating an equilibrium between these two factors. It proves particularly useful in scenarios where one factor bears more significance than the other. The score ranges from 0 to 1, with 1 signifying perfect precision and recall, and 0 indicating the worst case. Furthermore, we provide both 'weighted' and 'macro' versions of the F1 score. |
-| Classification                           | Missing Ratio                          | This metric calculates the proportion of responses where no options from the given choices in the task are returned. |
-| Classification                           | Matthews Correlation Coefficient (MCC) | The MCC is a metric that assesses the quality of binary classifications, producing a score ranging from -1 to +1. A score of +1 signifies perfect prediction, 0 denotes a prediction no better than random chance, and -1 indicates a completely inverse prediction. |
-| Sequential Labeling                      | F1 score                               | In the context of Sequential Labeling tasks, we utilize the F1 Score as computed by the `seqeval` library, a robust entity-level evaluation metric. This metric mandates an exact match of both the entity's span and type between the predicted and ground truth entities for a correct evaluation. True Positives (TP) represent correctly predicted entities, False Positives (FP) denote incorrectly predicted entities or entities with mismatched spans/types, and False Negatives (FN) signify missed entities from the ground truth. Precision, recall, and F1-score are then computed using these quantities, with the F1 Score representing the harmonic mean of precision and recall. |
-| Sequential Labeling                      | Label F1 score                         | This metric evaluates model performance based solely on the correctness of the labels predicted, without considering entity spans. |
-| Relation Extraction                      | Precision                              | Precision measures the proportion of correctly predicted relations out of all predicted relations. It is calculated as the number of True Positives (TP) divided by the sum of True Positives and False Positives (FP). |
-| Relation Extraction                      | Recall                                 | Recall measures the proportion of correctly predicted relations out of all actual relations. It is calculated as the number of True Positives (TP) divided by the sum of True Positives and False Negatives (FN). |
-| Relation Extraction                      | F1 score                               | The F1 Score is the harmonic mean of precision and recall, and it provides a balance between these two metrics. The F1 Score is at its best at 1 (perfect precision and recall) and worst at 0. |
+| Classification                           | Macro F1 |The Macro F1 is a metric that evaluates the overall performance of a multi-class classification model by computing the unweighted average of the F1 scores for each class. It provides a balanced measure of precision and recall across all classes, with a score ranging from 0 to 1. A score of 1 indicates perfect precision and recall for all classes, while a score of 0 reflects poor performance, with the model failing to correctly identify any class. |
 | Extractive and Abstractive Summarization | Rouge-N                                | This measures the overlap of N-grams (a contiguous sequence of N items from a given sample of text) between the system-generated summary and the reference summary. 'N' can be 1, 2, or more, with ROUGE-1 and ROUGE-2 being commonly used to assess unigram and bigram overlaps respectively. |
 | Extractive and Abstractive Summarization | Rouge-L                                | This metric evaluates the longest common subsequence (LCS) between the system and the reference summaries. LCS takes into account sentence level structure similarity naturally and identifies longest co-occurring in-sequence n-grams automatically. |
-| Question Answering                       | EmACC                                  | EMACC assesses the exact match between the model-generated response and the reference answer. In other words, the model-generated response is considered correct only if it matches the reference answer exactly, word-for-word. |
+| Extractive and Abstractive Summarization | BERTScore | BERTScore measures the semantic similarity between the system-generated summary and the reference summary by computing contextualized embeddings with BERT. It evaluates precision, recall, and F1 score based on token similarity, providing a nuanced assessment of semantic content beyond exact match. |
+| Extractive and Abstractive Summarization | BARTScore | BARTScore assesses the quality of generated summaries by estimating the likelihood of the candidate given the reference (or vice versa) using a pretrained BART model. It captures fluency and relevance through probability scores, effectively evaluating the coherence and informativeness of the summaries. |
 
 >  Additionally, you can determine if the labels should be lowercased during the matching process by specifying `LOWER_CASE` in your class definition. This is pertinent since labels are matched based on their appearance in the generated output. For tasks like examinations where the labels are a specific set of capitalized letters such as 'A', 'B', 'C', this should typically be set to False.
 
