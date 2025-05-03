@@ -4,33 +4,32 @@ from typing import List, Union
 import json
 import lm_eval.base
 
-from . import SeaF
+from . import CroF
 # Clear GPU memory
 import torch
 torch.cuda.empty_cache()
 TASK_REGISTRY = {
-    "SeaF_thEx": SeaF.ThExTask,
-    "SeaF_idfinsent": SeaF.IDfinsent,
-    "SeaF_IdFinReviewsSent": SeaF.IDFinReviewsSent,
-    "SeaF_CCFraud": SeaF.CCFraudTask,
-    "SeaF_craccf": SeaF.craccfTask,
-    "SeaF_fbp": SeaF.FpbTask,
-    "SeaF_Australian": SeaF.AustralianTask,
-    "SeaF_sm_cikmID": SeaF.StockMovementCIKMID,
-    "SeaF_vi_bigdata": SeaF.StockMovementBigDataVI,
-    "SeaF_sm_aclPH": SeaF.StockMovementACLPH,
-    "SeaF_sm_aclMY": SeaF.StockMovementACLMY,
-    "SeaF_stockATh": SeaF.StockMovementStockA,
-    "SeaF_fiqasa": SeaF.FIQASA,
-    "SeaF_cra_lendingclub": SeaF.lendingclub,
-    "SeaF_IDFinURLSum": SeaF.IDFinURLSumTask,
-    "SeaF_VieRen": SeaF.VieComputerPartTask,
-    "SeaF_MayRen": SeaF.MayComputerPartTask,
-    "SeaF_ThaRen": SeaF.THComputerPartTask,
-    "SeaF_IndRen": SeaF.IndComputerPartTask,
-    "SeaF_FilRen": SeaF.FilComputerPartTask,
+    "CroF_fe": CroF.FETask,
+    "CroF_fbp": CroF.FpbTask,
+    "CroF_FinSent": CroF.FinSentTask,
+    "CroF_MayFPB": CroF.MayFPBTask,
+    
+    "CroF_StockA": CroF.StockATask,
+    "CroF_ACL18": CroF.ACL18Task,
+    "CroF_IndCIKM18": CroF.StockIndCIKM18,
+    "CroF_sm_aclFil": CroF.StockMovementACLFil,
+    
+    "CroF_NA": CroF.NATask,
+    "CroF_EDTSUM": CroF.EDTSUM,
+    "CroF_IDFinURLSum": CroF.IDFinURLSumTask,
+    "CroF_ThaNA": CroF.ThaNATask,
+    
+    "CroF_NL": CroF.NLTask,
+    "CroF_Headlines": CroF.Headlines,
+    "CroF_AppRevs": CroF.AppRevsTask,
+    "CroF_VieNL": CroF.VieNLTask,
 
-    **SeaF.SM_TASKS,
+    **CroF.SM_TASKS,
 }
 
 
