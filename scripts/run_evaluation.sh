@@ -1,11 +1,11 @@
-pixiu_path='/root/SeaFBen'
+pixiu_path='/root/CroFinben'
 export PYTHONPATH="$pixiu_path/src:$pixiu_path/src/financial-evaluation:$pixiu_path/src/metrics/BARTScore"
 echo $PYTHONPATH
 export CUDA_VISIBLE_DEVICES="0"
 cd ..
 python src/eval.py \
     --model hf-causal-vllm \
-    --tasks SeaF_thEx \
+    --tasks CroF_NL \
     --model_args use_accelerate=True,pretrained=llama-2-7b-chat-hf,tokenizer=llama-2-7b-chat-hf,use_fast=False,max_gen_toks=1024,dtype=float16 \
     --no_cache \
     --batch_size 2 \
