@@ -87,7 +87,7 @@ FinSA, FinSP, FinTS, and FinTC
 > Financial Text Classification (FinTC):
 - [NA (ZH)]
 - [EDTSUM (EN)]
-- [URLSum (Ind)](https://huggingface.co/datasets/SeaFinAI/URLSum)
+- [URLSum (Ind)](https://huggingface.co/datasets/CronFinAI/URLSum)
 - [ThaNA (Tha)]
 
 > Financial Text Classification (FinTC):
