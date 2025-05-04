@@ -7,7 +7,7 @@ echo "Current directory: $(pwd)"
 
 python eval.py \
     --model "gpt-3.5-turbo" \
-    --tasks "SeaF_fbp" \
+    --tasks "CroF_fbp" \
     --model_args use_accelerate=True,max_gen_toks=80,use_fast=False,dtype=float16,trust_remote_code=True \
     --no_cache \
     --batch_size "2" \
