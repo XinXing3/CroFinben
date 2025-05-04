@@ -1,5 +1,5 @@
 export CUDA_VISIBLE_DEVICES='0,1,2,3,4,7'
-export PYTHONPATH='.../SeaFBen/src'
+export PYTHONPATH='.../CroFinben/src'
 
 model_name_or_path='...'
 
