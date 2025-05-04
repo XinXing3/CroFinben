@@ -73,29 +73,29 @@
 FinSA, FinSP, FinTS, and FinTC
 
 > Financial Sentiment Analysis (FinSA):
-- [FE (ZH)]
-- [FPB (EN)]
-- [FinSent (Ind)]
-- [MayFPB (May)]
+- [FE (ZH)](https://huggingface.co/datasets/CroFinAI/FE)
+- [FPB (EN)](https://huggingface.co/datasets/CroFinAI/FPB)
+- [FinSent (Ind)](https://huggingface.co/datasets/CroFinAI/FinSent)
+- [MayFPB (May)](https://huggingface.co/datasets/CroFinAI/MayFPB)
 
 > Financial Stock Prediction (FinSP):
-- [StockA (ZH)]
-- [ACL18 (EN)]
-- [IndCIKM18 (Ind)]
-- [FilACL18 (Fil)]
+- [StockA (ZH)](https://huggingface.co/datasets/CroFinAI/StockA)
+- [ACL18 (EN)](https://huggingface.co/datasets/CroFinAI/ACL18)
+- [IndCIKM18 (Ind)](https://huggingface.co/datasets/CroFinAI/IndCIKM18)
+- [FilACL18 (Fil)](https://huggingface.co/datasets/CroFinAI/FilACL18)
 
 > Financial Text Classification (FinTC):
-- [NA (ZH)]
-- [EDTSUM (EN)]
+- [NA (ZH)](https://huggingface.co/datasets/CroFinAI/NA)
+- [EDTSUM (EN)](https://huggingface.co/datasets/CroFinAI/EDTSUM)
 - [URLSum (Ind)](https://huggingface.co/datasets/CroFinAI/URLSum)
-- [ThaNA (Tha)]
+- [ThaNA (Tha)](https://huggingface.co/datasets/CroFinAI/ThaNA)
 
 > Financial Text Classification (FinTC):
 
-- [NL (ZH)]
-- [Headlines (EN)]
-- [AppRews (Ind)](https://huggingface.co/datasets/SeaFinAI/AppRevs)
-- [VieNL (Vie)]
+- [NL (ZH)](https://huggingface.co/datasets/CroFinAI/NL)
+- [Headlines (EN)](https://huggingface.co/datasets/CroFinAI/Headlines)
+- [AppRews (Ind)](ttps://huggingface.co/datasets/CroFinAI/AppRevs)
+- [VieNL (Vie)](https://huggingface.co/datasets/CroFinAI/VieNL)
 
 
 ### Key Breakthroughs
