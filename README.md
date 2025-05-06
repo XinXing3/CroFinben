@@ -31,7 +31,7 @@
 <div style="font-size: 18px; margin-bottom: 20px;margin-top:20px">
   <img src="https://github.com/qqgzi/SeaFBen/blob/master/asset/%E5%AD%A6%E7%94%9F.svg?raw=true" 
          alt="学生" style="float: left; width: 25px; height: 25px; margin-right: 10px;">
-  <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Kang Wang</a><br />
+  <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;"> </a><br />
    <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
  </div>   
   
@@ -39,23 +39,13 @@
    
    <img src="https://github.com/qqgzi/SeaFBen/blob/master/asset/%E5%AD%A6%E7%94%9F.svg?raw=true" 
          alt="学生" style="float: left; width: 25px; height: 25px; margin-right: 10px;">
-    <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Ke Qin</a><br />
+    <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;"> </a><br />
     <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
     
 </div>
--->
-<!-- 底部图片部分
-<div align="center" style="margin-top: 40px;">
-    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbx3AQWiMhxwOvFb7r1PH-h_i5-b3H9xsGVKnkQwbFlA&s' alt='Yunnan University' height='100px' style="margin-right: 30px;">
-    <img src='https://i.postimg.cc/CLtkBwz7/57-EDDD9-FB0-DF712-F3-AB627163-C2-1-EF15655-13-FCA.png' alt='Wuhan University Logo' height='100px'>
-</div>
- -->
+
 
 -----------------
-
-<!-- ![](https://img.shields.io/badge/pixiu-v0.1-gold) -->
-![](https://black.readthedocs.io/en/stable/_static/license.svg)
-[![Discord](https://img.shields.io/discord/1146837080798933112)](https://discord.gg/HRWpUmKB)
 <!-- 
 [Pixiu Paper](https://arxiv.org/abs/2306.05443) | [FinBen Leaderboard](https://huggingface.co/spaces/finosfoundation/Open-Financial-LLM-Leaderboard)
  -->
@@ -302,188 +292,3 @@ TASK_REGISTRY = {
 
 >  Additionally, you can determine if the labels should be lowercased during the matching process by specifying `LOWER_CASE` in your class definition. This is pertinent since labels are matched based on their appearance in the generated output. For tasks like examinations where the labels are a specific set of capitalized letters such as 'A', 'B', 'C', this should typically be set to False.
 
----
-<!--
-## FIT: Financial Instruction Dataset
-
-Our instruction dataset is uniquely tailored for the domain-specific LLM, FinMA. This dataset has been meticulously assembled to fine-tune our model on a diverse range of financial tasks. It features publicly available multi-task and multi-modal data derived from the multiple open released financial datasets.
-
-The dataset is multi-faceted, featuring tasks including sentiment analysis, news headline classification, named entity recognition, question answering, and stock movement prediction. It covers both textual and time-series data modalities, offering a rich variety of financial data. The task specific instruction prompts for each task have been carefully degined by domain experts.
-
-### Modality and Prompts
-
-The table below summarizes the different tasks, their corresponding modalities, text types, and examples of the instructions used for each task:
-
-| **Task**                     | **Modalities**    | **Text Types**        | **Instructions Examples**                                    |
-| ---------------------------- | ----------------- | --------------------- | ------------------------------------------------------------ |
-| Sentiment Analysis           | Text              | news headlines,tweets | "Analyze the sentiment of this statement extracted from a financial news article.Provide your answer as either negative, positive or neutral. For instance, 'The company's stocks plummeted following the scandal.' would be classified as negative." |
-| News Headline Classification | Text              | News Headlines        | "Consider whether the headline mentions the price of gold. Is there a Price or Not in the gold commodity market indicated in the news headline? Please answer Yes or No." |
-| Named Entity Recognition     | Text              | financial agreements  | "In the sentences extracted from financial agreements in U.S. SEC filings, identify the named entities that represent a person ('PER'), an organization ('ORG'), or a location ('LOC'). The required answer format is: 'entity name, entity type'. For instance, in 'Elon Musk, CEO of SpaceX, announced the launch from Cape Canaveral.', the entities would be: 'Elon Musk, PER; SpaceX, ORG; Cape Canaveral, LOC'" |
-| Question Answering           | Text              | earnings reports      | "In the context of this series of interconnected finance-related queries and the additional information provided by the pretext, table data, and post text from a company's financial filings, please provide a response to the final question. This may require extracting information from the context and performing mathematical calculations. Please take into account the information provided in the preceding questions and their answers when formulating your response:" |
-| Stock Movement Prediction    | Text, Time-Series | tweets, Stock Prices  | "Analyze the information and social media posts to determine if the closing price of *\{tid\}* will ascend or descend at *\{point\}*. Please respond with either Rise or Fall." |
-
-### Dataset Statistics
-
-The dataset contains a vast amount of instruction data samples (136K), allowing FinMA to capture the nuances of the diverse financial tasks. The table below provides the statistical details of the instruction dataset:
-
-| Data      | Task                         | Raw    | Instruction | Data Types                | Modalities        | License      | Original Paper |
-| --------- | ---------------------------- | ------ | ----------- | ------------------------- | ----------------- | ------------ | -------------- |
-| FPB       | sentiment analysis           | 4,845  | 48,450      | news                      | text              | CC BY-SA 3.0 | [1]            |
-| FiQA-SA   | sentiment analysis           | 1,173  | 11,730      | news headlines, tweets    | text              | Public       | [2]            |
-| Headline  | news headline classification | 11,412 | 11,412      | news headlines            | text              | CC BY-SA 3.0 | [3]            |
-| NER       | named entity recognition     | 1,366  | 13,660      | financial agreements      | text              | CC BY-SA 3.0 | [4]            |
-| FinQA     | question answering           | 8,281  | 8,281       | earnings reports          | text, table       | MIT License  | [5]            |
-| ConvFinQA | question answering           | 3,892  | 3,892       | earnings reports          | text, table       | MIT License  | [6]            |
-| BigData22 | stock movement prediction    | 7,164  | 7,164       | tweets, historical prices | text, time series | Public       | [7]            |
-| ACL18     | stock movement prediction    | 27,053 | 27,053      | tweets, historical prices | text, time series | MIT License  | [8]            |
-| CIKM18    | stock movement prediction    | 4,967  | 4,967       | tweets, historical prices | text, time series | Public       | [9]            |
-
-1. Pekka Malo, Ankur Sinha, Pekka Korhonen, Jyrki Wallenius, and Pyry Takala. 2014. Good debt or bad debt: Detecting semantic orientations in economic texts. Journal of the Association for Information Science and Technology 65, 4 (2014), 782–796.
-2. Macedo Maia, Siegfried Handschuh, André Freitas, Brian Davis, Ross McDermott, Manel Zarrouk, and Alexandra Balahur. 2018. Www’18 open challenge: financial opinion mining and question answering. In Companion proceedings of the the web conference 2018. 1941–1942
-3. Ankur Sinha and Tanmay Khandait. 2021. Impact of news on the commodity market: Dataset and results. In Advances in Information and Communication: Proceedings of the 2021 Future of Information and Communication Conference (FICC), Volume 2. Springer, 589–601
-4. Julio Cesar Salinas Alvarado, Karin Verspoor, and Timothy Baldwin. 2015. Domain adaption of named entity recognition to support credit risk assessment. In Proceedings of the Australasian Language Technology Association Workshop 2015. 84–90.
-5. Zhiyu Chen, Wenhu Chen, Charese Smiley, Sameena Shah, Iana Borova, Dylan Langdon, Reema Moussa, Matt Beane, Ting-Hao Huang, Bryan R Routledge, et al . 2021. FinQA: A Dataset of Numerical Reasoning over Financial Data. In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. 3697–3711.
-6. Zhiyu Chen, Shiyang Li, Charese Smiley, Zhiqiang Ma, Sameena Shah, and William Yang Wang. 2022. Convfinqa: Exploring the chain of numerical reasoning in conversational finance question answering. arXiv preprint arXiv:2210.03849 (2022).
-7. Yejun Soun, Jaemin Yoo, Minyong Cho, Jihyeong Jeon, and U Kang. 2022. Accurate Stock Movement Prediction with Self-supervised Learning from Sparse Noisy Tweets. In 2022 IEEE International Conference on Big Data (Big Data). IEEE, 1691–1700.
-8. Yumo Xu and Shay B Cohen. 2018. Stock movement prediction from tweets and historical prices. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 1970–1979.
-9. Huizhe Wu, Wei Zhang, Weiwei Shen, and Jun Wang. 2018. Hybrid deep sequential modeling for social text-driven stock prediction. In Proceedings of the 27th ACM international conference on information and knowledge management. 1627–1630.
-
-### Generating Datasets for FIT
-
-When you are working with the Financial Instruction Dataset (FIT), it's crucial to follow the prescribed format for training and testing models.
-
-The format should look like this:
-
-```json
-{
-    "id": "unique id",
-    "conversations": [
-        {
-            "from": "human",
-            "value": "Your prompt and text"
-        },
-        {
-            "from": "agent",
-            "value": "Your answer"
-        }
-    ],
-    "text": "Text to be classified",
-    "label": "Your label"
-}
-```
-
-Here's what each field means:
-
-- "id": a unique identifier for each example in your dataset.
-- "conversations": a list of conversation turns. Each turn is represented as a dictionary, with "from" representing the speaker, and "value" representing the text spoken in the turn.
-- "text": the text to be classified.
-- "label": the ground truth label for the text.
-
-
-The first turn in the "conversations" list should always be from "human", and contain your prompt and the text. The second turn should be from "agent", and contain your answer.
-
----
-
-## FinMA v0.1: Financial Large Language Model
-
-We are pleased to introduce the first version of FinMA, including three models FinMA-7B, FinMA-7B-full, FinMA-30B, fine-tuned on LLaMA 7B and LLaMA-30B. FinMA-7B and FinMA-30B are trained with the NLP instruction data, while FinMA-7B-full is trained with the full instruction data from FIT covering both NLP and prediction tasks. 
-
-FinMA v0.1 is now available on [Huggingface](https://huggingface.co/TheFinAI/finma-7b-nlp) for public use. We look forward to the valuable contributions that this initial version will make to the financial NLP field and encourage users to apply it to various financial tasks and scenarios. We also invite feedback and shared experiences to help improve future versions.
-
-### How to fine-tune a new large language model using PIXIU based on FIT?
-
-Coming soon.
-
----
-
-## FinMem: A Performance-Enhanced LLM Trading Agent
-
-FinMem is a novel LLM-based agent framework devised for financial decision-making, encompasses three core modules: Profiling, to outline the agent's characteristics; Memory, with layered processing, to aid the agent in assimilating realistic hierarchical financial data; and Decision-making, to convert insights gained from memories into investment decisions. Currently, FinMem can trade single stocks with high returns after a simple mode warm-up. Below is a quick start for a dockerized version framework, with TSLA as sample input.
-
-Step 1: Set environmental variables
-in `.env` add HUGGINGFACE TOKEN and OPENAI API KEY as needed.
-```bash
-OPENAI_API_KEY = "<Your OpenAI Key>"
-HF_TOKEN = "<Your HF token>"
-```
-
-Step 2: Set endpoint URL in `config.toml`
-Use endpoint URL to deploy models based on the model of choice (OPENAI, Gemini, open source models on HuggingFace, etc.). For open-source models on HuggingFace, one choice for generating TGI endpoints is through RunPod. 
-```bash
-[chat]
-model = "tgi"
-end_point = "<set the your endpoint address>"
-tokenization_model_name = "<model name>"
-...
-```
-
-Step 3: Build Docker Image and Container
-```bash
-docker build -t test-finmem .devcontainer/. 
-```
-start container:
-```bash
-docker run -it --rm -v $(pwd):/finmem test-finmem bash
-```
-
-Step 4: Start Simulation!
-```bash
- Usage: run.py sim [OPTIONS]                                                                                                                
-                                                                                                                                            
- Start Simulation                                                                                                                           
-                                                                                                                                            
-╭─ Options ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ --market-data-path    -mdp      TEXT  The environment data pickle path [default: data/06_input/subset_symbols.pkl]                       │
-│ --start-time          -st       TEXT  The training or test start time [default: 2022-06-30 For Ticker 'TSLA']                                                               │
-│ --end-time            -et       TEXT  The training or test end time [default: 2022-10-11]                                                                 │
-│ --run-model           -rm       TEXT  Run mode: train or test [default: train]                                                           │
-│ --config-path         -cp       TEXT  config file path [default: config/config.toml]                                                     │
-│ --checkpoint-path     -ckp      TEXT  The checkpoint save path [default: data/10_checkpoint_test]                                             │
-│ --result-path         -rp       TEXT  The result save path [default: data/11_train_result]                                               │
-│ --trained-agent-path  -tap      TEXT  Only used in test mode, the path of trained agent [default: None. Can be changed to data/05_train_model_output OR data/06_train_checkpoint]                                  │
-│ --help                                Show this message and exit.                                                                        │
-╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
-                              
-```
-Example Usage:
-```bash
-python run.py sim --market-data-path data/03_model_input/tsla.pkl --start-time 2022-06-30 --end-time 2022-10-11 --run-model train --config-path config/tsla_tgi_config.toml --checkpoint-path data/06_train_checkpoint --result-path data/05_train_model_output
-```
-
-There are also checkpoint functionalities. For more details please visit [FinMem Repository](https://github.com/pipiku915/FinMem-LLM-StockTrading) directly. 
-
----
-
-## Citation
-
-If you use PIXIU in your work, please cite our paper.
-
-```
-@misc{xie2023pixiu,
-      title={PIXIU: A Large Language Model, Instruction Data and Evaluation Benchmark for Finance}, 
-      author={Qianqian Xie and Weiguang Han and Xiao Zhang and Yanzhao Lai and Min Peng and Alejandro Lopez-Lira and Jimin Huang},
-      year={2023},
-      eprint={2306.05443},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-
-@misc{xie2024FinBen,
-      title={The FinBen: An Holistic Financial Benchmark for Large Language Models}, 
-      author={Qianqian Xie and Weiguang Han and Zhengyu Chen and Ruoyu Xiang and Xiao Zhang and Yueru He and Mengxi Xiao and Dong Li and Yongfu Dai and Duanyu Feng and Yijing Xu and Haoqiang Kang and Ziyan Kuang and Chenhan Yuan and Kailai Yang and Zheheng Luo and Tianlin Zhang and Zhiwei Liu and Guojun Xiong and Zhiyang Deng and Yuechen Jiang and Zhiyuan Yao and Haohang Li and Yangyang Yu and Gang Hu and Jiajia Huang and Xiao-Yang Liu and Alejandro Lopez-Lira and Benyou Wang and Yanzhao Lai and Hao Wang and Min Peng and Sophia Ananiadou and Jimin Huang},
-      year={2024},
-      eprint={2402.12659},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-```
-
-## License
-
-PIXIU is licensed under [MIT]. For more details, please see the [MIT](LICENSE) file.
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=The-FinAI/PIXIU&type=Date)](https://star-history.com/#The-FinAI/PIXIU&Date)
-
--->
