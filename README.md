@@ -31,7 +31,7 @@
 <div style="font-size: 18px; margin-bottom: 20px;margin-top:20px">
   <img src="https://github.com/qqgzi/SeaFBen/blob/master/asset/%E5%AD%A6%E7%94%9F.svg?raw=true" 
          alt="学生" style="float: left; width: 25px; height: 25px; margin-right: 10px;">
-  <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;"> </a><br />
+  <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Qingqing Wang </a><br />
    <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
  </div>   
   
@@ -39,12 +39,34 @@
    
    <img src="https://github.com/qqgzi/SeaFBen/blob/master/asset/%E5%AD%A6%E7%94%9F.svg?raw=true" 
          alt="学生" style="float: left; width: 25px; height: 25px; margin-right: 10px;">
-    <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;"> </a><br />
+    <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Zekang Huang </a><br />
     <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
     
 </div>
-
-
+<div style="font-size: 18px; margin-bottom: 20px;margin-top:20px">
+   
+   <img src="https://github.com/qqgzi/SeaFBen/blob/master/asset/%E5%AD%A6%E7%94%9F.svg?raw=true" 
+         alt="学生" style="float: left; width: 25px; height: 25px; margin-right: 10px;">
+    <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">kqin </a><br />
+    <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
+    
+</div>
+<div style="font-size: 18px; margin-bottom: 20px;margin-top:20px">
+   
+   <img src="https://github.com/qqgzi/SeaFBen/blob/master/asset/%E5%AD%A6%E7%94%9F.svg?raw=true" 
+         alt="学生" style="float: left; width: 25px; height: 25px; margin-right: 10px;">
+    <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">pengm </a><br />
+    <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
+    
+</div>
+<div style="font-size: 18px; margin-bottom: 20px;margin-top:20px">
+   
+   <img src="https://github.com/qqgzi/SeaFBen/blob/master/asset/%E5%AD%A6%E7%94%9F.svg?raw=true" 
+         alt="学生" style="float: left; width: 25px; height: 25px; margin-right: 10px;">
+    <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">kyue </a><br />
+    <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
+    
+</div>
 -----------------
 <!-- 
 [Pixiu Paper](https://arxiv.org/abs/2306.05443) | [FinBen Leaderboard](https://huggingface.co/spaces/finosfoundation/Open-Financial-LLM-Leaderboard)
