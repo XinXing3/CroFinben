@@ -1,7 +1,10 @@
 <!-- 标题部分 -->
+
 <div style="width: 100%; height: 100px; text-align: center; background-color: #f4f4f4; padding: 20px 0;">
-   <h1 style="font-size: 25px; font-weight: bold; color: black; line-height:100px;">
-       CroFinben: Multilingual Benchmarking of LLMs for Cross Mainstream and Low-resource Finance
+   <h1 style="font-size: 50px; font-weight: bold; color: black; 
+              line-height: 100px; /* 让行高适配容器高度，实现垂直居中 */
+              margin: 0; /* 清除默认外边距 */">
+      CroFinben: Multilingual Benchmarking of LLMs for Cross Mainstream and Low-resource Finance
    </h1>
    
 </div>
