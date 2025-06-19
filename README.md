@@ -1,13 +1,11 @@
 <!-- 标题部分 -->
-
-<div style="width: 100%; height: 100px; text-align: center; background-color: #f4f4f4; padding: 20px 0;">
-   <h1 style="font-size: 50px; font-weight: bold; color: black; 
+<h1 style="font-size: 50px; font-weight: bold; color: black; 
               line-height: 100px; /* 让行高适配容器高度，实现垂直居中 */
               margin: 0; /* 清除默认外边距 */">
       CroFinben: Multilingual Benchmarking of LLMs for Cross Mainstream and Low-resource Finance
-   </h1>
+</h1>
    
-</div>
+
    Welcome to here, let's get to know CroFinben together. </br>
    we introduce CroFinBen, the first multilingual benchmark specifically designed to bridge the language-resource gap between mainstream and low-resource finance. It includes 4 key financial tasks (FinSA, FinSP, FinTS, and FinTC) in both high-resource languages (English and Chinese) and low-resource SEA languages (Indonesian, Malaysian, Thai, Filipino, and Vietnamese), comprising 50k samples from 16 datasets to ensure a comprehensive and balanced evaluation. It enhances the fairness and robustness of FinLLMs, providing strong support for improving performance  in global financial scenarios.
 <!-- 作者部分 -->
