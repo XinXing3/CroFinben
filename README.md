@@ -1,110 +1,53 @@
-<!-- 标题部分 -->
-<h1 style="font-size: 50px; font-weight: bold; color: black; 
-              line-height: 50px; /* 让行高适配容器高度，实现垂直居中 */
-              margin: 0; /* 清除默认外边距 */">
-      CroFinben: Multilingual Benchmarking of LLMs for Cross Mainstream and Low-resource Finance
-</h1>
-   
-
-   Welcome to here, let's get to know CroFinben together. </br>
-   we introduce CroFinBen, the first multilingual benchmark specifically designed to bridge the language-resource gap between mainstream and low-resource finance. It includes 4 key financial tasks (FinSA, FinSP, FinTS, and FinTC) in both high-resource languages (English and Chinese) and low-resource SEA languages (Indonesian, Malaysian, Thai, Filipino, and Vietnamese), comprising 50k samples from 16 datasets to ensure a comprehensive and balanced evaluation. It enhances the fairness and robustness of FinLLMs, providing strong support for improving performance  in global financial scenarios.
-<!-- 作者部分 -->
+# CroFinben: Multilingual Benchmarking of LLMs for Cross Mainstream and Low-resource Finance
 
    
-<!--<h1 align="left">Main Contributors</h1>
+## 📘Introduction
 
-<div align="left" style="margin-top: 40px;">
-
-<div style="font-size: 18px; margin-bottom: 20px;margin-top:20px">
-   <img src="https://github.com/qqgzi/SeaFBen/blob/master/asset/%E4%B8%93%E5%AE%B6%E6%95%99%E6%8E%88.svg?raw=true" 
-   alt="专家" style="float: left; width: 25px; height: 25px; margin-right: 10px;">
-    <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Gang Hu</a><br />
-    <span style="font-size: 16px; color: #555;">Cross-lingual Intelligent Information Processing, Yunnan University</span>
-</div>
-    
-
-<div style="font-size: 18px; margin-bottom: 20px;margin-top:20px">
-   <img src="https://github.com/qqgzi/SeaFBen/blob/master/asset/%E5%AD%A6%E7%94%9F.svg?raw=true" 
-         alt="学生" style="float: left; width: 25px; height: 25px; margin-right: 10px;">
-   <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Siqi Lv</a><br />
-   <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
+<div style="display: flex; align-items: flex-start;">
+  <div style="flex: 1;text-align: justify;">
+    <!-- 这里放你的文字内容 -->
+    <p>
+      Welcome to here, let's get to know CroFinben together. </br>
+      Given the current situation where existing benchmarks in finance still struggle with cross-language generalization and cross-domain knowledge transfer, we introduce <b>CroFinBen</b> —— the first multilingual benchmark <b>specifically designed to bridge the language-resource gap between mainstream and low-resource finance</b>. It includes <b>4 key financial tasks</b> (FinSA, FinSP, FinTS, and FinTC) in both <b>high-resource languages</b> (English and Chinese) and <b>low-resource SEA languages</b> (Indonesian, Malaysian, Thai, Filipino, and Vietnamese), comprising 50k samples from 16 datasets to ensure a comprehensive and balanced evaluation. It enhances the fairness and robustness of FinLLMs, providing strong support for improving performance  in global financial scenarios.
+The language and data distribution of required capabilities for CroFinben benchmark is shown on the right.
+    </p>
+  </div>
+  <img src="img/data_distribution.jpg" width="250px" style="margin-left: 20px;margin-top: 30px;" />
 </div>
 
-<div style="font-size: 18px; margin-bottom: 20px;margin-top:20px">
-  <img src="https://github.com/qqgzi/SeaFBen/blob/master/asset/%E5%AD%A6%E7%94%9F.svg?raw=true" 
-         alt="学生" style="float: left; width: 25px; height: 25px; margin-right: 10px;">
-  <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Qingqing Wang </a><br />
-   <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
- </div>   
-  
-<div style="font-size: 18px; margin-bottom: 20px;margin-top:20px">
-   
-   <img src="https://github.com/qqgzi/SeaFBen/blob/master/asset/%E5%AD%A6%E7%94%9F.svg?raw=true" 
-         alt="学生" style="float: left; width: 25px; height: 25px; margin-right: 10px;">
-    <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">Zekang Huang </a><br />
-    <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
-    
-</div>
-<div style="font-size: 18px; margin-bottom: 20px;margin-top:20px">
-   
-   <img src="https://github.com/qqgzi/SeaFBen/blob/master/asset/%E5%AD%A6%E7%94%9F.svg?raw=true" 
-         alt="学生" style="float: left; width: 25px; height: 25px; margin-right: 10px;">
-    <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">kqin </a><br />
-    <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
-    
-</div>
-<div style="font-size: 18px; margin-bottom: 20px;margin-top:20px">
-   
-   <img src="https://github.com/qqgzi/SeaFBen/blob/master/asset/%E5%AD%A6%E7%94%9F.svg?raw=true" 
-         alt="学生" style="float: left; width: 25px; height: 25px; margin-right: 10px;">
-    <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">pengm </a><br />
-    <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
-    
-</div>
-<div style="font-size: 18px; margin-bottom: 20px;margin-top:20px">
-   
-   <img src="https://github.com/qqgzi/SeaFBen/blob/master/asset/%E5%AD%A6%E7%94%9F.svg?raw=true" 
-         alt="学生" style="float: left; width: 25px; height: 25px; margin-right: 10px;">
-    <a target='_blank' style="color: #2980B9; text-decoration: none; font-weight: bold;">kyue </a><br />
-    <span style="font-size: 16px; color: #555;">Graduate Student at the School of Information, Yunnan University</span>
-    
-</div>
------------------
-<!-- 
-[Pixiu Paper](https://arxiv.org/abs/2306.05443) | [FinBen Leaderboard](https://huggingface.co/spaces/finosfoundation/Open-Financial-LLM-Leaderboard)
- -->
+---
 
-
-
-**Languages**
+### 🗣️Languages
 
 - high-resource languages: - [EN] - [ZH]
 - low-rescoure languages: -[Tha] - [Ind]  - [Vie]  - [May]  - [Fil]
 
-**Evaluations**:
+### 🖥️Evaluations
+
+There are four financial tasks in total: FinSA, FinSP, FinTS, and FinTC
+
+The information about the datasets are as follows:
 
 
-FinSA, FinSP, FinTS, and FinTC
-
-> Financial Sentiment Analysis (FinSA):
+> 🎭️Financial Sentiment Analysis (FinSA):
 - [FE (ZH)](https://huggingface.co/datasets/CroFinAI/FE)
 - [FPB (EN)](https://huggingface.co/datasets/CroFinAI/FPB)
 - [FinSent (Ind)](https://huggingface.co/datasets/CroFinAI/FinSent)
 - [MayFPB (May)](https://huggingface.co/datasets/CroFinAI/MayFPB)
 
-> Financial Stock Prediction (FinSP):
+> 💹Financial Stock Prediction (FinSP):
 - [StockA (ZH)](https://huggingface.co/datasets/CroFinAI/StockA)
 - [ACL18 (EN)](https://huggingface.co/datasets/CroFinAI/ACL18)
 - [IndCIKM18 (Ind)](https://huggingface.co/datasets/CroFinAI/IndCIKM18)
 - [FilACL18 (Fil)](https://huggingface.co/datasets/CroFinAI/FilACL18)
 
-> Financial Text Classification (FinTC):
+> 📃Financial Text Summary (FinTS):
 - [NA (ZH)](https://huggingface.co/datasets/CroFinAI/NA)
 - [EDTSUM (EN)](https://huggingface.co/datasets/CroFinAI/EDTSUM)
 - [URLSum (Ind)](https://huggingface.co/datasets/CroFinAI/URLSum)
 - [ThaNA (Tha)](https://huggingface.co/datasets/CroFinAI/ThaNA)
 
-> Financial Text Classification (FinTC):
+> 💡Financial Text Classification (FinTC):
 
 - [NL (ZH)](https://huggingface.co/datasets/CroFinAI/NL)
 - [Headlines (EN)](https://huggingface.co/datasets/CroFinAI/Headlines)
@@ -122,10 +65,10 @@ FinSA, FinSP, FinTS, and FinTC
 
 ---
 
-## CroFinben Evalution Benchmark result: The evaluation results of 23 representative large models on CroFinben.
+## CroFinben Evalution Benchmark results
 
 
-### Tasks
+The table below shows the overview of CroFinBen benchmark: financial tasks (FinTask), NLP main tasks (NLP), languages (Lang), datasets, specific financial tasks, data sizes, evaluation metrics, data sources, creation methods, text lengths (Sentence/Passage/Paragraph), and licenses.
 
 
 | FinTask | Language | Dataset   | Specific task           | Evaluation | Evaluation                                       | Source                    | types          | Textual Hierarchy | License      | NLP Task             |
@@ -151,7 +94,7 @@ FinSA, FinSP, FinTS, and FinTC
 
 
 
-
+### The evaluation results of 23 representative large models on CroFinben
 
 
 
@@ -185,41 +128,18 @@ FinSA, FinSP, FinTS, and FinTC
 
 
 
-### Evaluation
 
-#### Preparation
+## 🔧 Environment Setup
 
-##### Locally install
+### Locally install
 ```bash
 
-cd SeaFBen
+cd CroFinben
 pip install -r requirements.txt
 cd src/financial-evaluation
 pip install -e .[multilingual]
 ```
 
-
-
-
-<!--
-#### Automated Task Assessment
-Before evaluation, please download [BART checkpoint](https://drive.google.com/u/0/uc?id=1_7JfF7KOInb7ZrxKHIigTMR4ChVET01m&export=download) to `src/metrics/BARTScore/bart_score.pth`.
-
- For automated evaluation, please follow these instructions:
-
-1. Huggingface Transformer
-
-   To evaluate a model hosted on the HuggingFace Hub, use this command:
-
-```bash
-python eval.py \
-    --model "hf-causal-llama" \
-    --model_args "use_accelerate=True,pretrained=PoLylm-13B,tokenizer=PoLylm-13B,use_fast=False" \
-    --tasks "CroFinben_NL"
-```
-
-More details can be found in the [lm_eval](https://github.com/EleutherAI/lm-evaluation-harness) documentation.
--->
 1. Commercial APIs
 
 
@@ -268,40 +188,7 @@ In this format:
 
 - `query`: Combination of your prompt and text
 - `answer`: Your label
-<!--
-For **Multi-turn** tasks (such as )
 
-For **Classification** tasks , additional keys should be defined:
-
-- `choices`: Set of labels
-- `gold`: Index of the correct label in choices (Start from 0)
-
-
-
-For **abstractive Summarization** tasks (such as [EDTSUM (FinBen_edtsum)](https://huggingface.co/datasets/TheFinAI/flare-edtsum)), no additional keys should be defined
-#### Implementing the task
-
-Once your dataset is ready, you can start implementing your task. Your task should be defined within a new class in flare.py or any other Python file located within the tasks directory.
-
-To cater to a range of tasks, we offer several specialized base classes.
-
-For instance, if you are embarking on a classification task, you can directly leverage our `IT` base class. This class allows for efficient and intuitive task creation. To better demonstrate this, let's delve into an example of crafting a task named FPB using the `Classification` base class:
-
-```python
-class Sea(Classification):
-    DATASET_PATH = "flare-fpb"
-```
-
-And that's it! Once you've created your task class, the next step is to register it in the `src/tasks/__init__.py` file. To do this, add a new line following the format `"task_name": module.ClassName`. Here is how it's done:
-
-```python
-TASK_REGISTRY = {
-    "flare_fpb": flare.FPB,
-    "your_new_task": your_module.YourTask,  # This is where you add your task
-}
-```
-
--->
 #### Predefined task metrics
 
 | Task                                     | Metric                                 | Illustration                                                 |
