@@ -51,7 +51,7 @@ The information about the datasets are as follows:
 
 - [NL (ZH)](https://huggingface.co/datasets/CroFinAI/NL)
 - [Headlines (EN)](https://huggingface.co/datasets/CroFinAI/Headlines)
-- [AppRews (Ind)](https://huggingface.co/datasets/CroFinAI/AppRevs)
+- [AppRews (Ind)](https://huggingface.co/datasets/CroFinAI/AppRews)
 - [VieNL (Vie)](https://huggingface.co/datasets/CroFinAI/VieNL)
 
 
