@@ -1,4 +1,4 @@
-# CroFinben: Multilingual Benchmarking of LLMs for Cross Mainstream and Low-resource Finance
+# CroFinBen: A Multilingual Benchmark of Large Language Models Across  High- and Low-Resource  Languages in Finance
 
    
 ## 📘Introduction
