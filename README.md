@@ -8,18 +8,20 @@
     <!-- 这里放你的文字内容 -->
     <p>
       Welcome to here, let's get to know CroFinben together. </br>
-      Given the current situation where existing benchmarks in finance still struggle with cross-language generalization and cross-domain knowledge transfer, we introduce <b>CroFinBen</b> —— the first multilingual benchmark <b>specifically designed to bridge the language-resource gap between mainstream and low-resource finance</b>. It includes <b>4 key financial tasks</b> (FinSA, FinSP, FinTS, and FinTC) in both <b>high-resource languages</b> (English and Chinese) and <b>low-resource SEA languages</b> (Indonesian, Malaysian, Thai, Filipino, and Vietnamese), comprising 50k samples from 16 datasets to ensure a comprehensive and balanced evaluation. It enhances the fairness and robustness of FinLLMs, providing strong support for improving performance  in global financial scenarios.
+      Given the current situation where existing benchmarks in finance still struggle with cross-language generalization and cross-domain knowledge transfer, we introduce <b>CroFinBen</b> —— the first multilingual benchmark <b>specifically designed to bridge the language-resource gap between high and low-resource finance</b>. It includes <b>4 key financial tasks</b> (FinSA, FinSP, FinTS, and FinTC) in both <b>high-resource languages</b> (English and Chinese) and <b>low-resource SEA languages</b> (Indonesian, Malaysian, Thai, Filipino, and Vietnamese), comprising 50k samples from 16 datasets to ensure a comprehensive and balanced evaluation. It enhances the fairness and robustness of FinLLMs, providing strong support for improving performance  in global financial scenarios.
 The language and data distribution of required capabilities for CroFinben benchmark is shown on the right.
     </p>
-  </div>
-  <img src="img/data_distribution.jpg" width="250px" style="margin-left: 20px;margin-top: 30px;" />
+
+
+</div>
+  <img src="img/data_distribution.png" width="250px" style="margin-left: 20px;margin-top: 30px;" />
 </div>
 
 ---
 
 ### 🗣️Languages
 
-- high-resource languages: - [EN] - [ZH]
+- high-resource languages: - [Eng] - [Zho]
 - low-rescoure languages: -[Tha] - [Ind]  - [Vie]  - [May]  - [Fil]
 
 ### 🖥️Evaluations
@@ -30,27 +32,27 @@ The information about the datasets are as follows:
 
 
 > 🎭️Financial Sentiment Analysis (FinSA):
-- [FE (ZH)](https://huggingface.co/datasets/CroFinAI/FE)
-- [FPB (EN)](https://huggingface.co/datasets/CroFinAI/FPB)
+- [FE (Zho)](https://huggingface.co/datasets/CroFinAI/FE)
+- [FPB (Eng)](https://huggingface.co/datasets/CroFinAI/FPB)
 - [FinSent (Ind)](https://huggingface.co/datasets/CroFinAI/FinSent)
 - [MayFPB (May)](https://huggingface.co/datasets/CroFinAI/MayFPB)
 
 > 💹Financial Stock Prediction (FinSP):
-- [StockA (ZH)](https://huggingface.co/datasets/CroFinAI/StockA)
-- [ACL18 (EN)](https://huggingface.co/datasets/CroFinAI/ACL18)
+- [StockA (Zho)](https://huggingface.co/datasets/CroFinAI/StockA)
+- [ACL18 (Eng)](https://huggingface.co/datasets/CroFinAI/ACL18)
 - [IndCIKM18 (Ind)](https://huggingface.co/datasets/CroFinAI/IndCIKM18)
 - [FilACL18 (Fil)](https://huggingface.co/datasets/CroFinAI/FilACL18)
 
 > 📃Financial Text Summary (FinTS):
-- [NA (ZH)](https://huggingface.co/datasets/CroFinAI/NA)
-- [EDTSUM (EN)](https://huggingface.co/datasets/CroFinAI/EDTSUM)
+- [NA (Zho)](https://huggingface.co/datasets/CroFinAI/NA)
+- [EDTSUM (Eng)](https://huggingface.co/datasets/CroFinAI/EDTSUM)
 - [URLSum (Ind)](https://huggingface.co/datasets/CroFinAI/URLSum)
 - [ThaNA (Tha)](https://huggingface.co/datasets/CroFinAI/ThaNA)
 
 > 💡Financial Text Classification (FinTC):
 
-- [NL (ZH)](https://huggingface.co/datasets/CroFinAI/NL)
-- [Headlines (EN)](https://huggingface.co/datasets/CroFinAI/Headlines)
+- [NL (Zho)](https://huggingface.co/datasets/CroFinAI/NL)
+- [Headlines (Eng)](https://huggingface.co/datasets/CroFinAI/Headlines)
 - [AppRews (Ind)](https://huggingface.co/datasets/CroFinAI/AppRews)
 - [VieNL (Vie)](https://huggingface.co/datasets/CroFinAI/VieNL)
 
@@ -73,20 +75,20 @@ The table below shows the overview of CroFinBen benchmark: financial tasks (FinT
 
 | FinTask | Language | Dataset   | Specific task           | Evaluation | Evaluation                                       | Source                    | types          | Textual Hierarchy | License      | NLP Task             |
 |---------|----------|-----------|-------------------------|------------|--------------------------------------------------|---------------------------|----------------|-------------------|--------------|----------------------|
-| FinSA     | ZH       | FE        | sentiment analysis      | 2020       | F1, Accuracy, Macro F1                           | social texts              | raw collection | Sentence          | Public       | Classification (CLS) |
-|         | EN       | FPB       | sentiment analysis      | 970        | F1, Accuracy, Macro F1                           | economic news             | raw collection | Sentence          | CC BY-SA 3.0 |                      |
+| FinSA     | Zho       | FE        | sentiment analysis      | 2020       | F1, Accuracy, Macro F1                           | social texts              | raw collection | Sentence          | Public       | Classification (CLS) |
+|         | Eng       | FPB       | sentiment analysis      | 970        | F1, Accuracy, Macro F1                           | economic news             | raw collection | Sentence          | CC BY-SA 3.0 |                      |
 |         | Ind      | FinSent   | sentiment analysis      | 2000       | F1, Accuracy, Macro F1                           | News Headlines            | raw collection | Sentence          | Apache-2.0   |                      |
 |         | May      | MayFPB    | sentiment analysis      | 970        | F1, Accuracy, Macro F1                           | Economic News             | expert review  | Paragraph         | MIT License  |                      |
-| FinSP      | ZH       | StockA    | stock prediction        | 1477       | F1, Accuracy, Macro F1                           | news,historical prices    | raw collection | Paragraph         | Public       | Reasoning (REA)      |
-|         | EN       | ACL18     | stock prediction        | 3720       | F1, Accuracy, Macro F1                           | tweets, historical prices | raw collection | Paragraph         | MIT License  |                      |
+| FinSP      | Zho       | StockA    | stock prediction        | 1477       | F1, Accuracy, Macro F1                           | news,historical prices    | raw collection | Paragraph         | Public       | Reasoning (REA)      |
+|         | Eng       | ACL18     | stock prediction        | 3720       | F1, Accuracy, Macro F1                           | tweets, historical prices | raw collection | Paragraph         | MIT License  |                      |
 |         | Ind      | IndCIKM18 | stock prediction        | 1139       | F1, Accuracy, Macro F1                           | tweets Stock Prices       | expert review  | Paragraph         | Public       |                      |
 |         | Fil      | FilACL18  | stock prediction        | 2000       | F1, Accuracy, Macro F1                           | Tweets, Stock prices      | expert review  | Paragraph         | MIT License  |                      |
-| FinTS     | ZH       | NA        | text summarization      | 3600       | Rouge-1, Rouge-2, Rouge-L,  BERTScore, BARTScore | news, announcements       | raw collection | Paragraph         | Public       | Generation (GEN)     |
-|         | EN       | EDTSUM    | text summarization      | 2000       | Rouge-1, Rouge-2, Rouge-L,  BERTScore, BARTScore | news articles             | raw collection | Paragraph         | Public       |                      |
+| FinTS     | Zho       | NA        | text summarization      | 3600       | Rouge-1, Rouge-2, Rouge-L,  BERTScore, BARTScore | news, announcements       | raw collection | Paragraph         | Public       | Generation (GEN)     |
+|         | Eng       | EDTSUM    | text summarization      | 2000       | Rouge-1, Rouge-2, Rouge-L,  BERTScore, BARTScore | news articles             | raw collection | Paragraph         | Public       |                      |
 |         | Ind      | URLSum    | url summarization       | 2834       | Rouge-1, Rouge-2, Rouge-L,  BERTScore, BARTScore | Indonesian News URLs      | raw collection | Paragraph         | Public       |                      |
 |         | Tha      | ThaNA     | text summarization      | 2000       | Rouge-1, Rouge-2, Rouge-L,  BERTScore, BARTScore | news, announcements       | expert review  | Paragraph         | Public       |                      |
-| FinTC     | ZH       | NL        | news classification     | 884        | F1, Accuracy, Macro F1                           | news articles             | raw collection | Paragraph         | Public       | Classification (CLS) |
-|         | EN       | Headlines | headline classification | 20547      | Avg F1                                           | news headlines            | raw collection | Sentence          | CC BY-SA 3.0 |                      |
+| FinTC     | Zho       | NL        | news classification     | 884        | F1, Accuracy, Macro F1                           | news articles             | raw collection | Paragraph         | Public       | Classification (CLS) |
+|         | Eng       | Headlines | headline classification | 20547      | Avg F1                                           | news headlines            | raw collection | Sentence          | CC BY-SA 3.0 |                      |
 |         | Ind      | AppRevs   | financial review        | 1999       | F1, Accuracy, Macro F1                           | Mandiri App Reviews       | raw collection | Sentence          | CC BY-NC 4.0 |                      |
 |         | Vie      | VieNL     | news classification     | 2000       | F1, Accuracy, Macro F1                           | news articles             | expert review  | Paragraph         | Public       |                      |
 |         |          |           |                         |            |                                                  |                           |                |                   |              |                      |
@@ -94,11 +96,11 @@ The table below shows the overview of CroFinBen benchmark: financial tasks (FinT
 
 
 
-### The evaluation results of 23 representative large models on CroFinben
+### The evaluation results of 23 representative LLMs on CroFinben
 
 
 
-| Model        |Finanical Task |        |        |        | NLP Task |        |        | language |        |        | overall |
+| Model        |Finanical Task  |        |        |        | NLP Task |        |        | language |        |        | overall |
 |--------------|----------------|--------|--------|--------|----------|--------|--------|----------|--------|--------|---------|
 |              | FinSA            | FinSP     | FinTS    | FinTC      | CLS      | GEN    | REA    | EN       | ZH     | SEA    |         |
 | LLaMa2       | 0.262          | 0.333  | 0.219  | 0.322  | 0.292    | 0.219  | 0.333  | 0.357    | 0.195  | 0.299  | 0.284   |
@@ -193,7 +195,7 @@ In this format:
 
 | Task                                     | Metric                                 | Illustration                                                 |
 | ---------------------------------------- | -------------------------------------- | ------------------------------------------------------------ |
-| Classification                           | Accuracy                               | This metric represents the ratio of correctly predicted observations to total observations. It is calculated as (True Positives + True Negatives) / Total Observations. |
+| Classification                           | Accuracy (ACC)                              | This metric represents the ratio of correctly predicted observations to total observations. It is calculated as (True Positives + True Negatives) / Total Observations. |
 | Classification                           | F1 Score                               | The F1 Score represents the harmonic mean of precision and recall, thereby creating an equilibrium between these two factors. It proves particularly useful in scenarios where one factor bears more significance than the other. The score ranges from 0 to 1, with 1 signifying perfect precision and recall, and 0 indicating the worst case. Furthermore, we provide both 'weighted' and 'macro' versions of the F1 score. |
 | Classification                           | Macro F1 |The Macro F1 is a metric that evaluates the overall performance of a multi-class classification model by computing the unweighted average of the F1 scores for each class. It provides a balanced measure of precision and recall across all classes, with a score ranging from 0 to 1. A score of 1 indicates perfect precision and recall for all classes, while a score of 0 reflects poor performance, with the model failing to correctly identify any class. |
 | Extractive and Abstractive Summarization | Rouge-N                                | This measures the overlap of N-grams (a contiguous sequence of N items from a given sample of text) between the system-generated summary and the reference summary. 'N' can be 1, 2, or more, with ROUGE-1 and ROUGE-2 being commonly used to assess unigram and bigram overlaps respectively. |
