@@ -14,9 +14,15 @@ The language and data distribution of required capabilities for CroFinben benchm
 
 <div align="center">
   <img src="img/data_distribution.png" alt="Data Distribution" width="350">
-  <p> Data Distribution.</p>
+  <p> Overview of the CroFinBen benchmark, which features diverse language coverage and data distributions, with dataset sizes ranging from 9,000 to 20,000 samples.</p>
 </div>
----
+
+
+<div align="center">
+  <img src="img/data_creation.png" alt="Data Creation" width="350">
+  <p> Overview of the proposed CroFinBen instruction data construction process, consisting of two core components: (a) data annotation and (b) prompt refinement, using two methods: raw data collection and expert review.</p>
+</div>
+
 
 ### 🗣️Languages
 
