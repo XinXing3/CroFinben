@@ -9,7 +9,6 @@
     <p>
       Welcome to here, let's get to know CroFinben together. </br>
       Given the current situation where existing benchmarks in finance still struggle with cross-language generalization and cross-domain knowledge transfer, we introduce <b>CroFinBen</b> —— the first multilingual benchmark <b>specifically designed to bridge the language-resource gap between high and low-resource finance</b>. It includes <b>4 key financial tasks</b> (FinSA, FinSP, FinTS, and FinTC) in both <b>high-resource languages</b> (English and Chinese) and <b>low-resource SEA languages</b> (Indonesian, Malaysian, Thai, Filipino, and Vietnamese), comprising 50k samples from 16 datasets to ensure a comprehensive and balanced evaluation. It enhances the fairness and robustness of FinLLMs, providing strong support for improving performance  in global financial scenarios.
-The language and data distribution of required capabilities for CroFinben benchmark is
 
 
 <div align="center">
@@ -65,7 +64,7 @@ The information about the datasets are as follows:
 ### Key Breakthroughs
 
 
-- **Breaking high- and low-resource cross-lingual barrier**: CroFinBen is the first benchmark supporting cross-mainstream and low-resource finance, particularly SEA languages (Ind, Tha, Fil, Vie, and May), filling the gap in low-resource financial tasks.
+- **Breaking high- and low-resource cross-lingual barriers**: CroFinBen is the first benchmark supporting cross-mainstream and low-resource finance, particularly SEA languages (Ind, Tha, Fil, Vie, and May), filling the gap in low-resource financial tasks.
 - **Highly localized annotation for low-resource dataset**: Unlike other benchmarks that rely on direct translations, CroFinBen works with SEA domain experts to refine financial terms, removing finance- and culture-specific elements to better meet local needs. 
 - **Fairness in high- and low-resource task consistency**: Ensures fair evaluation via consistent NLP main tasks across both high- and low-resource languages, eliminating biases that arise from differing task complexities in existing methods.
 - **Comprehensive evaluation of multi-language tasks**: Conducts an in-depth evaluation of 23 representative general, SEA LLMs and FinLLMs, revealing their strengths and limitations in adapting to both high- and low-resource financial environments.
