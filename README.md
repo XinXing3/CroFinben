@@ -9,14 +9,13 @@
     <p>
       Welcome to here, let's get to know CroFinben together. </br>
       Given the current situation where existing benchmarks in finance still struggle with cross-language generalization and cross-domain knowledge transfer, we introduce <b>CroFinBen</b> —— the first multilingual benchmark <b>specifically designed to bridge the language-resource gap between high and low-resource finance</b>. It includes <b>4 key financial tasks</b> (FinSA, FinSP, FinTS, and FinTC) in both <b>high-resource languages</b> (English and Chinese) and <b>low-resource SEA languages</b> (Indonesian, Malaysian, Thai, Filipino, and Vietnamese), comprising 50k samples from 16 datasets to ensure a comprehensive and balanced evaluation. It enhances the fairness and robustness of FinLLMs, providing strong support for improving performance  in global financial scenarios.
-The language and data distribution of required capabilities for CroFinben benchmark is shown on the right.
-    </p>
+The language and data distribution of required capabilities for CroFinben benchmark is
 
 
+<div align="center">
+  <img src="img/data_distribution.png" alt="Data Distribution" width="350">
+  <p> Data Distribution.</p>
 </div>
-  <img src="img/data_distribution.png" width="250px" style="margin-left: 20px;margin-top: 30px;" />
-</div>
-
 ---
 
 ### 🗣️Languages
